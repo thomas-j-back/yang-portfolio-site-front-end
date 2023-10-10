@@ -2,8 +2,7 @@ name: dev precheck
 
 on:
   push:
-    branches:
-      - dev
+
 jobs:
   lint:
     name: check lint
