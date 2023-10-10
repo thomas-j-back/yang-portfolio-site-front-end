@@ -15,8 +15,8 @@ jobs:
         uses: actions/checkout@v2
       - name: install dependencies
         run: |
-        echo "Installing Next dependencies..."
-        npm i
+          echo "Installing Next dependencies..."
+          npm i
       - name: run lint
         run: |
           echo "running linter..."
