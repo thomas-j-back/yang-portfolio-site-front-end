@@ -2,8 +2,7 @@ name: dev precheck
 
 on:
   pull_request:
-    branches:
-      - dev
+
 jobs:
   lint:
     name: check lint
