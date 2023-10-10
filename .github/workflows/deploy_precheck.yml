@@ -1,0 +1,25 @@
+name: deployment precheck
+
+on:
+  pull_request:
+    types: 
+      - opened
+    branches: [dev]
+
+jobs:
+  lint:
+    name: check lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v2
+      - name: install dependencies
+        run: |
+          echo "Installing Next dependencies..."
+          npm i
+      - name: run lint
+        run: |
+          echo "running linter..."
+          npm run lint
+        env:
+          CI: true
