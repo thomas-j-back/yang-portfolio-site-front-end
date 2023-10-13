@@ -94,7 +94,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            no vercel!
+            no vercedfdfdfl!dfd
           </p>
         </a>
       </div>
