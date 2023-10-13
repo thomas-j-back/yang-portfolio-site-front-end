@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: clone repo
         uses: actions/checkout@v2
-      - name: build app
       - run: npm ci
       - run: npm run build
       - name: Deploy to Staging server
