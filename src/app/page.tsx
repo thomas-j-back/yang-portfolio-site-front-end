@@ -5,15 +5,15 @@ export default function Home() {
         hello there
         <CasePreview
             title="Web design"
-            proficiencies={['UX Design', 'Responsive Design']}
-            description="designing a clear...."
-            previewImage="/public/next.svg"
+            proficiencies={['UX Design', 'Responsive Design', 'Web Design']}
+            description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
+            previewImage="/public/placeholder.png"
         ></CasePreview>
         <CasePreview
             title="Web design"
-            proficiencies={['UX Design', 'Responsive Design']}
-            description="designing a clear...."
-            previewImage="/public/next.svg"
+            proficiencies={['UX Design']}
+            description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
+            previewImage="/public/vercel.svg"
         ></CasePreview>
     </div>)
 }
