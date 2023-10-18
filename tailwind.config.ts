@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       'accent': '#CFEBCA',
+      'white': '#fff',
       'accent-dark' : '#384139'
     },
     fontFamily: {
