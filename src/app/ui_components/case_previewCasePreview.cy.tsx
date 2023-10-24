@@ -7,6 +7,8 @@ describe('<CasePreview />', () => {
     cy.mount(<CasePreview
       proficiencies={['Ux Design']}
       title="Project Title"
+      description="blah blah"
+      previewImage="/image.png"
 
     />)
 

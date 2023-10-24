@@ -10,7 +10,8 @@ const config: Config = {
     colors: {
       'accent': '#CFEBCA',
       'white': '#fff',
-      'accent-dark' : '#384139'
+      'accent-dark' : '#384139',
+      'footer' :'#F7FCF6'
     },
     fontFamily: {
       neue: ['Helvetica Neue']
