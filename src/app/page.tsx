@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div>
             {/* hero banner */}
-            <div className="hero-banner-bg">
+            <div className="hero-banner-bg mt-16">
                 <div className="px-8 md:px-20 lg:px-28 py-20 lg:w-1/2 md:w-8/12 w-fit">
                     <h1 className="font-bold text-5xl text-white mb-5">
                         Hi! I&apos;m Yang.
@@ -21,31 +21,16 @@ export default function Home() {
                 proficiencies={['UX Design', 'Responsive Design', 'Web Design']}
                 description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
                 previewImage="/placeholder.png"
+                pageRoute="/case_study/test_case"
             ></CasePreview>
             <CasePreview
                 title="Web design"
                 proficiencies={['UX Design']}
                 description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
                 previewImage="/placeholder.png"
+                pageRoute="/case_study/test_case"
             ></CasePreview>
-            <CasePreview
-                title="E-commerce Website Checking out Experiences"
-                proficiencies={['UX Design', 'Responsive Design', 'Web Design']}
-                description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
-                previewImage="/placeholder.png"
-            ></CasePreview>
-            <CasePreview
-                title="E-commerce Website Checking out Experiences"
-                proficiencies={['UX Design', 'Responsive Design', 'Web Design']}
-                description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
-                previewImage="/placeholder.png"
-            ></CasePreview>
-            <CasePreview
-                title="E-commerce Website Checking out Experiences"
-                proficiencies={['UX Design', 'Responsive Design', 'Web Design']}
-                description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
-                previewImage="/placeholder.png"
-            ></CasePreview>
+
             {/* footer */}
             <div className="bg-footer py-12 px-8 md:px-20 lg:px-28">
                 <p className="font-bold text-3xl mb-10">Thanks for stopping by, Let's chat!</p>

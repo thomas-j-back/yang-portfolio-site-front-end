@@ -1,12 +1,14 @@
 import React, { FunctionComponent } from 'react'
 import { CasePreviewProps } from '../../models/ui_components/casePreview'
 import Image from 'next/image'
+import Link from "next/link"
 
 export const CasePreview: FunctionComponent<CasePreviewProps> = ({
     title,
     proficiencies,
     description,
-    previewImage
+    previewImage,
+    pageRoute
 }) => (
     //
     <div className="py-8 px-8 md:px-20 lg:px-28 flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between gap-x-4">
@@ -24,17 +26,20 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                 </div>
                 <p className="text-sm font-normal">{description}</p>
             </div>
-            <a className="sm:relative bottom-0 left-0 mt-4" href="#">
+            <Link className="sm:relative bottom-0 left-0 mt-4" href={pageRoute}>
                 <p className="text-md">View Project</p>
-            </a>
+            </Link>
         </div>
         <div className="pb-6 md:pb-0">
-            <Image
-                src={previewImage}
-                width={400}
-                height={400}
-                alt="title"
-            />
+            <Link href={pageRoute}>
+                <Image
+                    src={previewImage}
+                    width={400}
+                    height={400}
+                    alt="title"
+                />
+            </Link>
+
         </div>
     </div>
 )
