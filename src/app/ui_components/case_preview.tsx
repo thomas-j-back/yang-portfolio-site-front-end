@@ -36,7 +36,7 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                     src={previewImage}
                     width={400}
                     height={400}
-                    alt="title"
+                    alt={title}
                 />
             </Link>
 
