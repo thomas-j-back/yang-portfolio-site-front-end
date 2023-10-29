@@ -7,7 +7,7 @@ export default function navBar() {
         <div className="w-full h-16 fixed top-0 z-10 bg-white px-8 md:px-20 lg:px-28">
             <div className="flex  justify-between mx-auto h-full">
                 <div>
-                    <Image />
+
                 </div>
                 <div className="flex justify-between items-center h-full">
                     <div className="sm:hidden flex hover:cursor-pointer">
