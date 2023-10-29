@@ -9,6 +9,7 @@ describe('<CasePreview />', () => {
       title="Project Title"
       description="blah blah"
       previewImage="/image.png"
+      pageRoute="this/route"
 
     />)
 
