@@ -18,17 +18,31 @@ export default function Home() {
             </div>
             <CasePreview
                 title="E-commerce Website Checking out Experiences"
-                proficiencies={['UX Design', 'Responsive Design', 'Web Design']}
+                proficiencies={['Product Design', 'Customer Support', 'Shipping Restrictions']}
                 description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
                 previewImage="/placeholder.png"
-                pageRoute="/case_study/test_case"
+                pageRoute="/case_study/e_commerce_site"
             ></CasePreview>
             <CasePreview
-                title="Web design"
-                proficiencies={['UX Design']}
-                description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
+                title="B2B Website Redesign"
+                proficiencies={['Marketing', 'UX/UI Design', 'Accessibility Design']}
+                description="Redesigning the Firework’s Website to Offer Clear Product Information, Build Trust, Raise Awareness, and Enhance Visitor Engagement for the Expanding Startup."
                 previewImage="/placeholder.png"
-                pageRoute="/case_study/test_case"
+                pageRoute="/case_study/b2b_site"
+            ></CasePreview>
+            <CasePreview
+                title="Branding Identity Design for Donation Application"
+                proficiencies={['Branding Guideline', 'Iconography', 'UI Design']}
+                description="Revamping AngeLink's brand and product with a new logo, a unified brand identity for their website and app, and various promotional materials."
+                previewImage="/placeholder.png"
+                pageRoute="/case_study/angel_link"
+            ></CasePreview>
+            <CasePreview
+                title="User-Friendly Design System for Streamlined Web Operations"
+                proficiencies={['Prototyping', 'Component Libraries', 'Responsive Design']}
+                description="Revamping AngeLink's brand and product with a new logo, a unified brand identity for their website and app, and various promotional materials."
+                previewImage="/placeholder.png"
+                pageRoute="/case_study/angel_link"
             ></CasePreview>
 
             {/* footer */}
