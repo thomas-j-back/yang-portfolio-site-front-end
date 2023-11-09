@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 
-
-
 export default function Home() {
+    const workUrl = '';
+    const funUrl = '';
+    const aboutUrl = '';
+
     return (
         <div>
             {/* hero banner */}
@@ -59,27 +61,6 @@ export default function Home() {
 
 
             {/* footer */}
-            <div className="bg-footer py-12 px-8 md:px-20 lg:px-28">
-                <p className="font-bold text-3xl mb-10">Thanks for stopping by, Let&apos;s chat!</p>
-                <div className="flex sm:flex-row flex-col justify-between gap-x-4">
-                    <div>
-                        <p className="mb-5">CONTACT ME</p>
-                        <p className="mb-10">yangliudesignerus@gmail.com</p>
-                        <p className="mb-5">LET&apos;S CONNECT</p>
-                        <div className="flex flex-column gap-3">
-                            <a href="#">Linkedin</a>
-                            <a href="#">Instagram</a>
-                            <a href="#">Resume</a>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-2 justify-between text-2xl mt-10 sm:mt-0">
-                        <a href="#">Works</a>
-                        <a href="#">Fun</a>
-                        <a href="#">About</a>
-                    </div>
-                </div>
 
-
-            </div>
         </div>)
 }

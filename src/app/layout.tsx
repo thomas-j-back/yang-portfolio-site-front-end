@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import NavBar from './ui_components/navigation/navbar'
+import Footer from './ui_components/navigation/footer'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className="font-neue">
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   )
