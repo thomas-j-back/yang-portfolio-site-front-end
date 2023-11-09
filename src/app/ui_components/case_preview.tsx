@@ -36,7 +36,7 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
             <Link href={pageRoute}>
                 <Image
                     src={previewImage}
-                    width={400}
+                    width={450}
                     height={400}
                     alt={title}
                 />

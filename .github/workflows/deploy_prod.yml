@@ -19,11 +19,11 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i"
-          SOURCE: ".next/ public/"
+          SOURCE: ".next/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
-          EXCLUDE: "/dist/, /node_modules/"
+          EXCLUDE: "/node_modules/"
           SCRIPT_BEFORE: |
             whoami
             ls -al
@@ -31,4 +31,24 @@ jobs:
             whoami
             ls -al
             echo $RSYNC_STDOUT
+
+      - name: Move public folder
+        uses: easingthemes/ssh-deploy@main 
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i"
+          SOURCE: "public/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_PUBLIC_TARGET }}
+          EXCLUDE: "/node_modules"
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al
+          SCRIPT_AFTER: |
+            whoami
+            ls -al
+            echo $RSYNC_STDOUT
+            npm run build
+            pm2 restart 0
 

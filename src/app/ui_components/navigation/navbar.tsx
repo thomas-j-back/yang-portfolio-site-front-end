@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-
+import navConfig from './navconfig'
 
 export default function navBar() {
     return (
@@ -18,17 +18,17 @@ export default function navBar() {
                     </div>
                     <ul className="hidden sm:flex gap-x-6 text-black">
                         <li>
-                            <Link href="/about">
+                            <Link href={navConfig.WORK}>
                                 <p>Works</p>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/services">
+                            <Link href={navConfig.FUN}>
                                 <p>Fun</p>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contacts">
+                            <Link href={navConfig.ABOUT}>
                                 <p>About</p>
                             </Link>
                         </li>
