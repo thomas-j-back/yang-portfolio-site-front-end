@@ -2,6 +2,8 @@ import React, { FunctionComponent } from 'react'
 import { CasePreviewProps } from '../../models/ui_components/casePreview'
 import Image from 'next/image'
 import Link from "next/link"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const CasePreview: FunctionComponent<CasePreviewProps> = ({
     title,
@@ -26,8 +28,8 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                 </div>
                 <p className="text-sm font-normal">{description}</p>
             </div>
-            <Link className="sm:relative bottom-0 left-0 mt-4" href={pageRoute}>
-                <p className="text-md">View Project</p>
+            <Link className="sm:relative bottom-0 left-0 mt-4 text-md" href={pageRoute}>
+                View Project <FontAwesomeIcon className="ml-2 text-lg" icon={faArrowRight} />
             </Link>
         </div>
         <div className="pb-6 md:pb-0">

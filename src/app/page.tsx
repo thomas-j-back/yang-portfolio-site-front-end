@@ -3,7 +3,7 @@ import Link from "next/link"
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 
 config.autoAddCss = false
@@ -39,7 +39,7 @@ export default function Home() {
                 <CasePreview
                     title="B2B Website Redesign"
                     proficiencies={['Marketing', 'UX/UI Design', 'Accessibility Design']}
-                    description="Redesigning the Firework’s Website to Offer Clear Product Information, Build Trust, Raise Awareness, and Enhance Visitor Engagement for the Expanding Startup."
+                    description="Redesigning Firework’s Website to offer clear product information, build trust, raise awareness, and enhance visitor engagement for this expanding startup."
                     previewImage="/b2b_site/b2b_preview.png"
                     pageRoute="/case_study/b2b_site"
                 ></CasePreview>
@@ -53,7 +53,7 @@ export default function Home() {
                 <CasePreview
                     title="User-Friendly Design System for Streamlined Web Operations"
                     proficiencies={['Prototyping', 'Component Libraries', 'Responsive Design']}
-                    description="Creating a Design System simplifies collaboration, reduces redundancy, and allows for rapid development and scalability."
+                    description="Creating a design system simplifies collaboration, reduces redundancy, and allows for rapid development and scalability."
                     previewImage="/user_friendly/user_friendly_preview.png"
                     pageRoute="/case_study/angel_link"
                 ></CasePreview>
