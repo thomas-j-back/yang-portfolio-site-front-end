@@ -1,12 +1,10 @@
 import { CasePreview } from './ui_components/case_preview'
 import Link from "next/link"
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 
-config.autoAddCss = false
+
 
 export default function Home() {
     return (
@@ -25,7 +23,7 @@ export default function Home() {
 
                 </div>
                 <div className="relative bottom-10 px-8 md:px-20 lg:px-28 pt-20">
-                    <Link scroll={true} href="#case_previews">View Project <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
+                    <Link href="#case_previews">View Project <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
                 </div>
             </div>
             <div id="case_previews">
