@@ -11,7 +11,7 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
     pageRoute
 }) => (
     //
-    <div className="py-8 px-8 md:px-20 lg:px-28 flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between gap-x-4">
+    <div className="py-8 px-8 md:px-20 lg:px-28 flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between gap-x-4 md:mb-10 mb-2">
         <div className="max-w-sm flex flex-col justify-between">
             <div className="flex-1">
                 <h1 className="font-bold text-3xl ">{title}</h1>
