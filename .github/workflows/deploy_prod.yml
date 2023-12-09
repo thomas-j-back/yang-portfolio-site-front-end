@@ -49,6 +49,6 @@ jobs:
             whoami
             ls -al
             echo $RSYNC_STDOUT
-            npm run build
+            npm i
             pm2 restart 0
 
