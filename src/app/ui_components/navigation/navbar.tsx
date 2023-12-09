@@ -4,7 +4,7 @@ import navConfig from './navconfig'
 
 export default function navBar() {
     return (
-        <div className="w-full h-16 fixed top-0 z-10 bg-white px-8 md:px-20 lg:px-28">
+        <div className="w-full h-16 fixed top-0 z-10 bg-white px-8 md:px-20 lg:px-32 xl:px-52">
             <div className="flex  justify-between mx-auto h-full">
                 <div>
 
