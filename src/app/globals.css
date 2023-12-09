@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./case_study/index.css";
 
 @font-face {
   font-family: 'Helvetica Neue';

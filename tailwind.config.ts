@@ -24,10 +24,13 @@ const config: Config = {
       md2: "1000px"
     },
     colors: {
+      'dark-text': '#1C1C1C',
       'accent': '#CFEBCA',
       'white': '#fff',
       'accent-dark' : '#384139',
-      'footer' :'#F7FCF6'
+      'footer' :'#F7FCF6',
+      'soft-gray': '#575757',
+      'light-gray': '#839599'
     },
     fontFamily: {
       neue: ['Helvetica Neue']
