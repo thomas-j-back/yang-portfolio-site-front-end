@@ -25,12 +25,12 @@ export default function Home() {
 
                 </div>
                 <div className="relative bottom-10  pt-20">
-                    <Link href="#case_previews">View Project <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
+                    <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
                 </div>
             </div>
             <div id="case_previews">
                 <CasePreview
-                    title="E-commerce Website Checking out Experiences"
+                    title="E-commerce Check Out Experience"
                     proficiencies={['Product Design', 'Customer Support', 'Shipping Restrictions']}
                     description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
                     previewImage="/ecommerce_site/ecommerce_preview.png"

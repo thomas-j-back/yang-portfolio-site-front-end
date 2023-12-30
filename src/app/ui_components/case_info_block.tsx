@@ -10,8 +10,8 @@ export const CaseInfoBlock: FunctionComponent<CaseInfoBlockProps> = ({
     infoRows
 }) => (
     //
-    <div className="text-light-gray">
-        <div className="flex flex-row pb-2">
+    <div className="text-light-gray text-base">
+        <div className="flex flex-row pb-2 items-center">
             <FontAwesomeIcon className="mr-4" icon={icon} />
             <p className="font-bold">{title}</p>
         </div>

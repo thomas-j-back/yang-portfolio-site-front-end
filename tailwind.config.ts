@@ -21,7 +21,7 @@ const config: Config = {
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
-      md2: "1000px"
+      'md2': "1000px"
     },
     colors: {
       'dark-text': '#1C1C1C',
@@ -30,7 +30,8 @@ const config: Config = {
       'accent-dark' : '#384139',
       'footer' :'#F7FCF6',
       'soft-gray': '#575757',
-      'light-gray': '#839599'
+      'light-gray': '#839599',
+      'fill-grey': '#F3F4F5'
     },
     fontFamily: {
       neue: ['Helvetica Neue']
