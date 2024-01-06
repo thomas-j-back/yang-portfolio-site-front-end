@@ -10,14 +10,16 @@ export const BigIconInfoBlock: FunctionComponent<BigIconInfoBlockProps> = ({
     description
 }) => (
     //
-    <div className="text-base">
-        <div className="flex flex-row pb-2 items-center text-light-gray ">
-            <FontAwesomeIcon className="mr-4" icon={icon} />
-            <p className="font-bold">{title}</p>
-        </div>
-        <div>
-            <p>{description}</p>
-        </div>
+    <div>
+        <div className="flex flex-col pb-2 items-left">
+            <div>
+                <FontAwesomeIcon className="mb-6 text-5xl text-light-gray" icon={icon} />
+            </div>
+            <div className="text-dark-gray">
+                <p className="font-bold text-lg mb-2">{title}</p>
+                <p>{description}</p>
+            </div>
 
+        </div>
     </div>
 )

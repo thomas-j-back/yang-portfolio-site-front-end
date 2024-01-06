@@ -23,6 +23,11 @@
 
 }
 
+.big-icon-info-div>* {
+  flex-basis: 50%;
+  margin-bottom: 5%;
+}
+
 
 
 
