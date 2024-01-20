@@ -14,7 +14,6 @@ export default function caseStudy() {
                     E-commerce Checkout Experience
                 </h1>
                 <p className="text-soft-gray">R+F encountered an issue with some of their skincare products being restricted from shipping to certain areas in the US. The solution will <strong>reduce expenses, replace manual processes to manage shipping restrictions and improve customer experience.</strong></p>
-                {/* <div className="flex sm:flex-row flex-col py-16 flex-column sm:justify-between justify-center flex-wrap sm:flex-nowrap"> */}
 
                 <div className="sm:gap-y-0 grid xs:grid-cols-2 sm:grid-cols-4 grid-cols-1 justify-center content-center py-16 gap-4">
                     <CaseInfoBlock
@@ -52,11 +51,16 @@ export default function caseStudy() {
                     Core Experiences
                 </h1>
                 <p className="text-2xl font-light">How might we comply with shipping laws while minimizing product disruptions for customers in specific zip codes?</p>
-                <Image
-                    width={450}
-                    height={400}
-                    alt={"Core Experiences"}
-                />
+                <div className="mt-20 mb-40">
+                    <Image
+                        alt={"Core Experiences"}
+                        src={"/user_friendly/user_friendly_preview.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }} // optional
+                    />
+                </div>
             </div>
             <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2">
                 <h1 className="font-bold text-2xl mb-7 text-dark-text">
@@ -112,13 +116,22 @@ export default function caseStudy() {
                             <p>Manual intervention was required to stop sales orders from shipping through DHL.</p>
                         </div>
                     </div>
+
                 </div>
-                <Image
-                    width={450}
-                    height={400}
-                    alt={"Core Experiences"}
-                />
-                <div className="text-dark-gray grid sm:grid-cols-[30%_60%] grid-cols-1">
+                <div className="mt-24 mb-40">
+                    <Image
+                        alt={"Core Experiences"}
+                        src={"/user_friendly/user_friendly_preview.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }} // optional
+                    />
+                </div>
+
+
+
+                <div className="text-dark-gray grid sm:grid-cols-[33%_66%] grid-cols-1">
                     <div className="sm:mb-0 mb-4">
                         <p className="text-sm mb-4">DESIGN</p>
                         <p className="font-bold text-lg mb-2">Research</p>
@@ -127,9 +140,25 @@ export default function caseStudy() {
                         <p>Misalignment with Business Requirement Documentation Misalignment with Business Requirement Documentation Misalignment with Business Requirement DocumentationMisalignment with Business Requirement Documentation.</p>
                     </div>
                 </div>
+                <div>
+
+                </div>
             </div>
             <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2">
-
+                <div className={"grid sm:grid-cols-2 grid-cols-1 gap-16"}>
+                    <Image
+                        width={550}
+                        height={550}
+                        alt={"Core Experiences"}
+                        src={"/user_friendly/user_friendly_preview.png"}
+                    />
+                    <Image
+                        width={550}
+                        height={550}
+                        alt={"Core Experiences"}
+                        src={"/user_friendly/user_friendly_preview.png"}
+                    />
+                </div>
             </div>
 
         </div>)
