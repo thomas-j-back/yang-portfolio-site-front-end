@@ -129,8 +129,6 @@ export default function caseStudy() {
                     />
                 </div>
 
-
-
                 <div className="text-dark-gray grid sm:grid-cols-[33%_66%] grid-cols-1">
                     <div className="sm:mb-0 mb-4">
                         <p className="text-sm mb-4">DESIGN</p>
@@ -145,7 +143,7 @@ export default function caseStudy() {
                 </div>
             </div>
             <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2">
-                <div className={"grid sm:grid-cols-2 grid-cols-1 gap-16"}>
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-16">
                     <Image
                         width={550}
                         height={550}
@@ -159,7 +157,17 @@ export default function caseStudy() {
                         src={"/user_friendly/user_friendly_preview.png"}
                     />
                 </div>
+                <div className="text-dark-gray grid sm:grid-cols-[33%_66%] grid-cols-1 mt-10">
+                    <div className="sm:mb-0 mb-4">
+                        <p className="text-sm mb-4">DESIGN</p>
+                        <p className="font-bold text-md mb-2">Providing the clear restriction information.</p>
+                    </div>
+                    <div>
+                        <p>Misalignment with Business Requirement Documentation Misalignment with Business Requirement Documentation Misalignment with Business Requirement DocumentationMisalignment with Business Requirement Documentation.</p>
+                    </div>
+                </div>
             </div>
+
 
         </div>)
 }
