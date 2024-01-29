@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div>
             {/* hero banner */}
-            <div className="hero-banner-bg text-white px-8 md:px-20 lg:px-32 xl:px-52">
+            <div className="hero-banner-bg text-white px-8 md:px-20 lg:px-32 xl:px-52 h-screen flex flex-col justify-center">
                 <div className="py-20 lg:w-1/2 md:w-8/12 w-fit">
                     <h1 className="font-bold text-5xl mb-5">
                         Hi! I&apos;m Yang.
