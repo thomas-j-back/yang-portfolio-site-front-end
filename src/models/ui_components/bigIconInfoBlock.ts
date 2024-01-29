@@ -1,7 +1,7 @@
-import { FontAwesomeIconProps } from "../../../node_modules/@fortawesome/react-fontawesome/index";
+import { IconDefinition } from "../../../node_modules/@fortawesome/fontawesome-svg-core/index";
 
 export type BigIconInfoBlockProps = {
-    icon: FontAwesomeIconProps,
+    icon: IconDefinition,
     title: string,
     description: string
 } 
