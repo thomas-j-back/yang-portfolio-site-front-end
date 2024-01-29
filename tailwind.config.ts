@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      'xs': '360px',
+      // => @media (min-width: 360px) { ... }
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'md2': "1000px",
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
@@ -21,13 +27,19 @@ const config: Config = {
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '1536px',
-      md2: "1000px"
+      // => @media (min-width: 1536px) { ... }
+      
     },
     colors: {
+      'dark-text': '#1C1C1C',
       'accent': '#CFEBCA',
       'white': '#fff',
       'accent-dark' : '#384139',
-      'footer' :'#F7FCF6'
+      'footer' :'#F7FCF6',
+      'soft-gray': '#575757',
+      'light-gray': '#839599',
+      'fill-grey': '#F3F4F5',
+      'dark-gray': '#505B5D'
     },
     fontFamily: {
       neue: ['Helvetica Neue']

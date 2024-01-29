@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div>
             {/* hero banner */}
-            <div className="hero-banner-bg mt-16 text-white px-8 md:px-20 lg:px-32 xl:px-52">
+            <div className="hero-banner-bg text-white px-8 md:px-20 lg:px-32 xl:px-52 h-screen flex flex-col justify-center">
                 <div className="py-20 lg:w-1/2 md:w-8/12 w-fit">
                     <h1 className="font-bold text-5xl mb-5">
                         Hi! I&apos;m Yang.
@@ -25,16 +25,16 @@ export default function Home() {
 
                 </div>
                 <div className="relative bottom-10  pt-20">
-                    <Link href="#case_previews">View Project <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
+                    <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
                 </div>
             </div>
             <div id="case_previews">
                 <CasePreview
-                    title="E-commerce Website Checking out Experiences"
+                    title="E-commerce Check Out Experience"
                     proficiencies={['Product Design', 'Customer Support', 'Shipping Restrictions']}
                     description="Designing a clear information guide, offering product alternatives, implementing zip code checkout control to benefit Customer Care, reduce costs, and enhance user’s satisfaction."
                     previewImage="/ecommerce_site/ecommerce_preview.png"
-                    pageRoute="/case_study/e_commerce_site"
+                    pageRoute="/case_study/ecommerce_site"
                 ></CasePreview>
                 <CasePreview
                     title="B2B Website Redesign"

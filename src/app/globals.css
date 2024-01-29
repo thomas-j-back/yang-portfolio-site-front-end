@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./case_study/index.css";
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -20,6 +21,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+.big-icon-info-div>* {
+  flex-basis: 50%;
+  margin-bottom: 5%;
 }
 
 
