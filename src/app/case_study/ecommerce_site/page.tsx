@@ -169,7 +169,7 @@ export default function caseStudy() {
                     </div>
                 </div>
             </div>
-            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2 bg-fill-grey">
+            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52  bg-fill-grey">
                 <h1 className="font-bold text-2xl sm:mb-7 text-dark-text">
                     Impacts
                 </h1>
