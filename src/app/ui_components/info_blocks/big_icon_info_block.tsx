@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { BigIconInfoBlockProps } from '../../models/ui_components/bigIconInfoBlock'
+import { BigIconInfoBlockProps } from '../../../models/ui_components/bigIconInfoBlock'
 import Image from 'next/image'
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
