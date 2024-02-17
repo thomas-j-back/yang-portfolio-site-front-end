@@ -10,42 +10,39 @@ import React from 'react'
 
 
 export default function Home() {
+
+    //Toggle selected hero image
     const [currentHeroImg, setCurrentHeroImg] = React.useState('/hero_banner/ux_designer_1.png')
-    let imageKey = 0
 
     return (
         <div>
             {/* hero banner */}
             <motion.div initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
-                <div className="py-10">
+                animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 2xl:px-96 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
+                <div>
                     <div className="font-bold text-4xl">
                         <p>
                             Hi! I&apos;m Yang.</p>
                         <p>
                             <span id="ux_designer" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/ux_designer_1.png')
-                                imageKey += 1;
+                                setCurrentHeroImg('/hero_banner/ux_designer_1.png');
                             }} className="cursor-pointer text-black">UX designer</span> by day,
                     </p>
                         <p>
                             <span id="culinary" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/culinary.png')
-                                imageKey += 1;
+                                setCurrentHeroImg('/hero_banner/culinary.png');
 
                             }} className="text-hero-highlight cursor-pointer" >Culinary wizard</span> by night,
                     </p>
                         <p>
                             A <span id="cat" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/cat_enthusiast.png')
-                                imageKey += 1;
+                                setCurrentHeroImg('/hero_banner/cat_enthusiast.png');
 
                             }} className="text-hero-highlight cursor-pointer" >cat enthusiast</span> 24/7,
                     </p>
                         <p>
                             and <span id="storyteller" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/storyteller.png')
-                                imageKey += 1;
+                                setCurrentHeroImg('/hero_banner/storyteller.png');
                             }} className="text-hero-highlight cursor-pointer" >visual storyteller</span>
                         </p>
 
@@ -61,6 +58,7 @@ export default function Home() {
 
             </motion.div>
             <motion.div id="case_previews"
+                className="py-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 2xl:px-96"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }} >
                 <CasePreview
