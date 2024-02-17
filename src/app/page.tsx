@@ -41,24 +41,51 @@ export default function Home() {
                                     height={0}
                                     sizes="100vw"
                                     style={{ width: '100%', top: '-12px', 'z-index': '-1' }}
-                                    className="absolute"
+                                    className={`${currentHeroImg == heroImages.default ? '' : 'hidden'} absolute`}
                                 />
                             </span> by day,
                     </p>
                         <p>
                             <span id="culinary" onClick={() => {
                                 setCurrentHeroImg(heroImages.culinary);
-                            }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer`} >Culinary wizard</span> by night,
+                            }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`} >Culinary wizard
+                                <Image
+                                    src="/hero_banner/highlights/culinary_highlight.png"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    style={{ width: '100%', bottom: '-2px', 'z-index': '-1' }}
+                                    className={`${currentHeroImg == heroImages.culinary ? '' : 'hidden'} absolute`}
+                                />
+                            </span> by night,
                     </p>
                         <p>
                             A <span id="cat" onClick={() => {
                                 setCurrentHeroImg(heroImages.cat);
-                            }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer`}>cat enthusiast</span> 24/7,
+                            }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>cat enthusiast
+                                <Image
+                                    src="/hero_banner/highlights/cat_highlight.png"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    style={{ width: '100%', right: '5px', bottom: '-5px', 'z-index': '-1' }}
+                                    className={`${currentHeroImg == heroImages.cat ? '' : 'hidden'} absolute`}
+                                />
+                            </span> 24/7,
                     </p>
                         <p>
                             and <span id="storyteller" onClick={() => {
                                 setCurrentHeroImg(heroImages.storyteller);
-                            }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer`}>visual storyteller</span>
+                            }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>visual storyteller
+                                <Image
+                                    src="/hero_banner/highlights/storyteller_highlight.png"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    style={{ width: '100%', height: '127%', right: '-22px', bottom: '-13px', 'z-index': '-1' }}
+                                    className={`${currentHeroImg == heroImages.storyteller ? '' : 'hidden'} absolute`}
+                                />
+                            </span>
                         </p>
 
                     </div>
