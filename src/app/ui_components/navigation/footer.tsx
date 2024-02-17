@@ -3,9 +3,9 @@ import navConfig from "./navconfig"
 
 export default function footerBar() {
     return (
-        <div className="bg-footer py-12 px-8 md:px-20 lg:px-32 xl:px-52">
-            <p className="font-bold text-3xl mb-10">Thanks for stopping by, Let&apos;s chat!</p>
-            <div className="flex sm:flex-row flex-col justify-between gap-x-4">
+        <div className="bg-footer py-12 px-8 md:px-20 lg:px-32 xl:px-52 text-white">
+            <p className="font-medium text-3xl mb-10">Thanks for stopping by, Let&apos;s chat!</p>
+            <div className="flex sm:flex-row flex-col justify-between gap-x-4 font-normal">
                 <div>
                     <p className="mb-5">CONTACT ME</p>
                     <p className="mb-10">yangliudesignerus@gmail.com</p>
@@ -21,6 +21,10 @@ export default function footerBar() {
                     <a href={navConfig.FUN}>Fun</a>
                     <a href={navConfig.ABOUT}>About</a>
                 </div>
+            </div>
+            <div className="text-center text-xs mt-16">
+                <p>@2023 YangLiu</p>
+                <p>Made with 💚 & ☕️</p>
             </div>
         </div>
     )

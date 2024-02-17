@@ -35,14 +35,16 @@ const config: Config = {
       'accent': '#CFEBCA',
       'white': '#fff',
       'accent-dark' : '#384139',
-      'footer' :'#F7FCF6',
+      'footer' :'#000000',
       'soft-gray': '#575757',
       'light-gray': '#839599',
       'fill-grey': '#F3F4F5',
-      'dark-gray': '#505B5D'
+      'dark-gray': '#505B5D',
+      'hero-highlight':'#666666'
     },
     fontFamily: {
-      neue: ['Helvetica Neue']
+      neue: ['Helvetica Neue'],
+      generalsans: ['General Sans']
     },
     extend: {
       // backgroundImage: {
