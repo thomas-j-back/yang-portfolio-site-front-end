@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { CaseInfoBlockProps } from '../../models/ui_components/caseInfoBlock'
+import { CaseInfoBlockProps } from '../../../models/ui_components/caseInfoBlock'
 import Image from 'next/image'
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
