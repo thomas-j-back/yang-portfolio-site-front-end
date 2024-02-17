@@ -1,3 +1,4 @@
 export type HeroImageProps = {
-    imageSrc: string
+    imageSrc: string,
+    imageAlt: string
 } 

@@ -1,13 +1,17 @@
 'use client'
 import { CasePreview } from './ui_components/case_preview'
+import { HeroImage } from './ui_components/hero_banner/hero_image'
 import Link from "next/link"
 import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion"
+import React from 'react'
 
 
 export default function Home() {
+    const [currentHeroImg, setCurrentHeroImg] = React.useState('/hero_banner/ux_designer_1.png')
+    let imageKey = 0
 
     return (
         <div>
@@ -19,32 +23,39 @@ export default function Home() {
                         <p>
                             Hi! I&apos;m Yang.</p>
                         <p>
-                            <span className="text-hero-highlight cursor-pointer">UX designer</span> by day,
+                            <span id="ux_designer" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/ux_designer_1.png')
+                                imageKey += 1;
+                            }} className="cursor-pointer text-black">UX designer</span> by day,
                     </p>
                         <p>
-                            <span className="text-hero-highlight cursor-pointer" >Culinary wizard</span> by night,
+                            <span id="culinary" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/culinary.png')
+                                imageKey += 1;
+
+                            }} className="text-hero-highlight cursor-pointer" >Culinary wizard</span> by night,
                     </p>
                         <p>
-                            A <span className="text-hero-highlight cursor-pointer" >cat enthusiast</span> 24/7,
+                            A <span id="cat" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/cat_enthusiast.png')
+                                imageKey += 1;
+
+                            }} className="text-hero-highlight cursor-pointer" >cat enthusiast</span> 24/7,
                     </p>
                         <p>
-                            and <span className="text-hero-highlight cursor-pointer" >visual storyteller</span>
+                            and <span id="storyteller" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/storyteller.png')
+                                imageKey += 1;
+                            }} className="text-hero-highlight cursor-pointer" >visual storyteller</span>
                         </p>
 
                     </div>
-                    <div className="relative bottom-10  pt-20 text-xl">
+                    <div className="relative bottom-10  mt-20 text-xl">
                         <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /> </Link>
                     </div>
                 </div>
                 <div>
-                    <Image
-                        alt={"Core Experiences"}
-                        src={"/hero_banner/ux_designer_1.png"}
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        style={{ width: 'auto', height: 'auto' }} // optional
-                    />
+                    <HeroImage key={currentHeroImg} imageSrc={currentHeroImg} imageAlt="UX Designer Yang Liu" />
                 </div>
 
 
