@@ -11,8 +11,16 @@ import React from 'react'
 
 export default function Home() {
 
+    const heroImages = {
+        default: '/hero_banner/ux_designer_1.png',
+        culinary: '/hero_banner/culinary.png',
+        cat: '/hero_banner/cat_enthusiast.png',
+        storyteller: '/hero_banner/storyteller.png'
+    }
+
     //Toggle selected hero image
-    const [currentHeroImg, setCurrentHeroImg] = React.useState('/hero_banner/ux_designer_1.png')
+    const [currentHeroImg, setCurrentHeroImg] = React.useState(heroImages.default)
+
 
     return (
         <div>
@@ -20,34 +28,42 @@ export default function Home() {
             <motion.div initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 2xl:px-96 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
                 <div>
-                    <div className="font-bold text-4xl">
+                    <div className="font-bold text-4xl relative z-10">
                         <p>
                             Hi! I&apos;m Yang.</p>
                         <p>
                             <span id="ux_designer" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/ux_designer_1.png');
-                            }} className="cursor-pointer text-black">UX designer</span> by day,
+                                setCurrentHeroImg(heroImages.default);
+                            }} className={`${currentHeroImg == heroImages.default ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>UX designer
+                                <Image
+                                    src="/hero_banner/highlights/ux_designer_highlight.png"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    style={{ width: '100%', top: '-12px', 'z-index': '-1' }}
+                                    className="absolute"
+                                />
+                            </span> by day,
                     </p>
                         <p>
                             <span id="culinary" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/culinary.png');
-                            }} className="text-hero-highlight cursor-pointer" >Culinary wizard</span> by night,
+                                setCurrentHeroImg(heroImages.culinary);
+                            }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer`} >Culinary wizard</span> by night,
                     </p>
                         <p>
                             A <span id="cat" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/cat_enthusiast.png');
-
-                            }} className="text-hero-highlight cursor-pointer" >cat enthusiast</span> 24/7,
+                                setCurrentHeroImg(heroImages.cat);
+                            }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer`}>cat enthusiast</span> 24/7,
                     </p>
                         <p>
                             and <span id="storyteller" onClick={() => {
-                                setCurrentHeroImg('/hero_banner/storyteller.png');
-                            }} className="text-hero-highlight cursor-pointer" >visual storyteller</span>
+                                setCurrentHeroImg(heroImages.storyteller);
+                            }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer`}>visual storyteller</span>
                         </p>
 
                     </div>
                     <div className="relative bottom-10  mt-20 text-xl">
-                        <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /> </Link>
+                        <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /></Link>
                     </div>
                 </div>
                 <div>

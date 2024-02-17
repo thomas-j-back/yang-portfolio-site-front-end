@@ -70,7 +70,7 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
     }
 
     return (
-        <motion.div className="flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-10 gap-x-1 mb-28">
+        <motion.div className="flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-5 gap-x-1 mb-28">
             <motion.div initial="initial" whileInView="animate" variants={caseVariants.left} className="max-w-sm flex flex-col justify-between">
                 <div className="flex-1">
                     <h1 className="font-bold text-3xl ">{title}</h1>
@@ -100,7 +100,6 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                         alt={title}
                     />
                 </Link>
-
             </motion.div>
         </motion.div>)
 }
