@@ -42,52 +42,7 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
                     sizes="100vw"
                     style={imageProps.css}
                 />
-            </motion.div></AnimatePresence >)
-
-    // switch (selectedImage) {
-    //     case 'default':
-    //         return <Image
-    //             src="/hero_banner/ux_designer_1.png"
-    //             alt={selectedImage}
-    //             width={0}
-    //             height={0}
-    //             sizes="100vw"
-    //             style={imageProps.css} // option
-    //         />
-    //     case 'uxDesigner':
-    //         return <Image src="" alt={selectedImage}
-    //             width={0}
-    //             height={0}
-    //             sizes="100vw"
-    //             style={imageProps.css} />
-    //     case 'culinaryWizard':
-    //         return <Image src="" alt={selectedImage}
-    //             width={0}
-    //             height={0}
-    //             sizes="100vw"
-    //             style={imageProps.css} />
-    //     case 'catEnthusiast':
-    //         return <Image src=""
-    //             alt={selectedImage}
-    //             width={0}
-    //             height={0}
-    //             sizes="100vw"
-    //             style={imageProps.css} />
-    //     case 'visualStoryTeller':
-    //         return <Image src=""
-    //             alt={selectedImage}
-    //             width={0}
-    //             height={0}
-    //             sizes="100vw"
-    //             style={imageProps.css} />
-    //     default:
-    //         return <Image src="/hero_banner/ux_designer_1.png"
-    //             alt={selectedImage}
-    //             width={0}
-    //             height={0}
-    //             sizes="100vw"
-    //             style={imageProps.css} />
-
-    // }
-
+            </motion.div>
+        </AnimatePresence>
+    )
 }

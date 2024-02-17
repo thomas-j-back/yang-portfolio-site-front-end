@@ -62,8 +62,15 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
 
     };
 
+    const imageProps = {
+        css: {
+            height: 'auto',
+            width: '100%',
+        },
+    }
+
     return (
-        <motion.div className="flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-10 gap-x-1 md:mb-10 mb-2">
+        <motion.div className="flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-10 gap-x-1 mb-28">
             <motion.div initial="initial" whileInView="animate" variants={caseVariants.left} className="max-w-sm flex flex-col justify-between">
                 <div className="flex-1">
                     <h1 className="font-bold text-3xl ">{title}</h1>
@@ -86,8 +93,10 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                 <Link href={pageRoute}>
                     <Image
                         src={previewImage}
-                        width={450}
-                        height={400}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={imageProps.css}
                         alt={title}
                     />
                 </Link>

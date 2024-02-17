@@ -31,7 +31,6 @@ export default function Home() {
                         <p>
                             <span id="culinary" onClick={() => {
                                 setCurrentHeroImg('/hero_banner/culinary.png');
-
                             }} className="text-hero-highlight cursor-pointer" >Culinary wizard</span> by night,
                     </p>
                         <p>
@@ -54,11 +53,10 @@ export default function Home() {
                 <div>
                     <HeroImage key={currentHeroImg} imageSrc={currentHeroImg} imageAlt="UX Designer Yang Liu" />
                 </div>
-
-
             </motion.div>
+
             <motion.div id="case_previews"
-                className="py-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 2xl:px-96"
+                className="pt-8 px-8 md:px-20 lg:px-32 xl:px-52 2xl:px-96 last:mb-10"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }} >
                 <CasePreview
