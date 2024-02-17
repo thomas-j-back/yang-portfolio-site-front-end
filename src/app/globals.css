@@ -24,11 +24,11 @@
 }
 
 .hero-banner-bg {
-  height: auto;
-  padding-top: 4rem;
+  height: calc(auto - 4rem);
+  /* padding-top: 4rem; */
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
 
   .hero-banner-bg {
     height: calc(100vh - 4rem);

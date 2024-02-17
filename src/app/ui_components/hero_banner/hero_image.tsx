@@ -27,6 +27,7 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
     return (
         <AnimatePresence>
             <motion.div
+                className="flex items-center justify-center"
                 exit={{ opacity: 0 }}
                 initial={{ opacity: 0 }}
                 transition={

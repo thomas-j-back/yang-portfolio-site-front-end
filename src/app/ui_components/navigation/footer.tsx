@@ -3,7 +3,7 @@ import navConfig from "./navconfig"
 
 export default function footerBar() {
     return (
-        <div className="bg-footer py-12 px-8 md:px-20 lg:px-32 xl:px-52 text-white">
+        <div className="bg-footer py-12 px-8 md:px-20 lg:px-32 xl:px-52 2xl:px-96 text-white">
             <p className="font-medium text-3xl mb-10">Thanks for stopping by, Let&apos;s chat!</p>
             <div className="flex sm:flex-row flex-col justify-between gap-x-4 font-normal">
                 <div>
