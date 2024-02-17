@@ -1,34 +1,68 @@
+'use client'
 import { CasePreview } from './ui_components/case_preview'
+import { HeroImage } from './ui_components/hero_banner/hero_image'
 import Link from "next/link"
+import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion"
+import React from 'react'
 
 
 export default function Home() {
-    const workUrl = '';
-    const funUrl = '';
-    const aboutUrl = '';
+    const [currentHeroImg, setCurrentHeroImg] = React.useState('/hero_banner/ux_designer_1.png')
+    let imageKey = 0
 
     return (
         <div>
             {/* hero banner */}
-            <div className="hero-banner-bg text-white px-8 md:px-20 lg:px-32 xl:px-52 h-screen flex flex-col justify-center">
-                <div className="py-20 lg:w-1/2 md:w-8/12 w-fit">
-                    <h1 className="font-bold text-5xl mb-5">
-                        Hi! I&apos;m Yang.
-                    <br />
-                        UX & Visual Designer
-                    </h1>
-                    <p className="text-sm">
-                        I specialize in crafting user-centric digital experiences, from eCommerce to B2B marketing websites. Skilled in design systems and branding identity, I&apos;m eager to tackle new challenges.
+            <motion.div initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
+                <div className="py-10">
+                    <div className="font-bold text-4xl">
+                        <p>
+                            Hi! I&apos;m Yang.</p>
+                        <p>
+                            <span id="ux_designer" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/ux_designer_1.png')
+                                imageKey += 1;
+                            }} className="cursor-pointer text-black">UX designer</span> by day,
                     </p>
+                        <p>
+                            <span id="culinary" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/culinary.png')
+                                imageKey += 1;
 
+                            }} className="text-hero-highlight cursor-pointer" >Culinary wizard</span> by night,
+                    </p>
+                        <p>
+                            A <span id="cat" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/cat_enthusiast.png')
+                                imageKey += 1;
+
+                            }} className="text-hero-highlight cursor-pointer" >cat enthusiast</span> 24/7,
+                    </p>
+                        <p>
+                            and <span id="storyteller" onClick={() => {
+                                setCurrentHeroImg('/hero_banner/storyteller.png')
+                                imageKey += 1;
+                            }} className="text-hero-highlight cursor-pointer" >visual storyteller</span>
+                        </p>
+
+                    </div>
+                    <div className="relative bottom-10  mt-20 text-xl">
+                        <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /> </Link>
+                    </div>
                 </div>
-                <div className="relative bottom-10  pt-20">
-                    <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2 text-md" icon={faArrowDown} /> </Link>
+                <div>
+                    <HeroImage key={currentHeroImg} imageSrc={currentHeroImg} imageAlt="UX Designer Yang Liu" />
                 </div>
-            </div>
-            <div id="case_previews">
+
+
+            </motion.div>
+            <motion.div id="case_previews"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }} >
                 <CasePreview
                     title="E-commerce Check Out Experience"
                     proficiencies={['Product Design', 'Customer Support', 'Shipping Restrictions']}
@@ -57,10 +91,10 @@ export default function Home() {
                     previewImage="/user_friendly/user_friendly_preview.png"
                     pageRoute="/case_study/angel_link"
                 ></CasePreview>
-            </div>
+            </motion.div>
 
 
             {/* footer */}
 
-        </div>)
+        </div >)
 }
