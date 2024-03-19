@@ -21,6 +21,7 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
         css: {
             height: 'auto',
             width: 'auto',
+            maxWidth: '500px'
         },
     }
 
