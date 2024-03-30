@@ -44,7 +44,7 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
                     alt={selectedImageAlt}
                     width={0}
                     height={0}
-                    sizes="100%"
+                    sizes="100vh"
                     style={imageProps.css}
                     priority
                 />
