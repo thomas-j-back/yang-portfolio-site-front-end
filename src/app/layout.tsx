@@ -16,7 +16,52 @@ export const metadata: Metadata = {
   description: 'Designed by Yang Liu, Implemented by Thomas Back',
 }
 
-const myFont = localFont({ src: '../../public/fonts/general-sans/GeneralSans-Variable.woff' })
+const generalSans = localFont(
+  {
+    src: [
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Regular.woff',
+        weight: '400',
+        style: 'normal'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Medium.woff',
+        weight: '500',
+        style: 'normal'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Semibold.woff',
+        weight: '600',
+        style: 'normal'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Italic.woff',
+        weight: '400',
+        style: 'italic'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Bold.woff',
+        weight: '700',
+        style: 'normal'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-BoldItalic.woff',
+        weight: '700',
+        style: 'italic'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Light.woff',
+        weight: '300',
+        style: 'normal'
+      },
+      {
+        path: '../../public/fonts/general-sans/GeneralSans-Extralight.woff',
+        weight: '200',
+        style: 'normal'
+      },
+    ]
+  }
+)
 
 
 export default function RootLayout({
@@ -26,7 +71,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ scrollBehavior: 'smooth' }}>
-      <body className={myFont.className}>
+      <body className={generalSans.className}>
         <NavBar />
         {children}
         <Footer />

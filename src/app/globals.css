@@ -10,9 +10,8 @@
 }
 
 @font-face {
-  font-family: 'General Sns';
-  src: url('/public/fonts/GeneralSans-Regular.otf') format("opentype");
-
+  font-family: 'GS';
+  src: url('/public/fonts/GeneralSans-Regular.woff')
 }
 
 :root {
@@ -22,6 +21,9 @@
   font-family: General Sans;
 
 }
+
+
+
 
 .hero-banner-bg {
   height: calc(100vh - 4rem);

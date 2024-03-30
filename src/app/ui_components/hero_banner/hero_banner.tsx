@@ -47,25 +47,20 @@ export const HeroBanner: FunctionComponent = () => {
 
     })
 
-    let resetTimer = () => {
-        // debugger;
-        // window.clearInterval(intervalVals.intervalId);
-    }
 
 
 
     return (
         <motion.div initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 2xl:px-96 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
+            animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-64 2xl:px-96 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
             <div>
-                <div className="font-bold text-4xl relative z-10">
+                <div className="font-semibold tracking-tight text-4xl relative z-10">
                     <p>
                         Hi! I&apos;m Yang.</p>
                     <p>
                         <span id="ux_designer" onClick={() => {
-                            resetTimer();
                             setCurrentHeroImg(heroImages.default);
-                        }} className={`${currentHeroImg == heroImages.default ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>UX designer
+                        }} className={`${currentHeroImg == heroImages.default ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>UX designer
                                 <Image
                                 src="/hero_banner/highlights/ux_designer_highlight.png"
                                 alt="text scribble"
@@ -79,9 +74,8 @@ export const HeroBanner: FunctionComponent = () => {
                     </p>
                     <p>
                         <span id="culinary" onClick={() => {
-                            resetTimer();
                             setCurrentHeroImg(heroImages.culinary);
-                        }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`} >Culinary wizard
+                        }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`} >Culinary wizard
                                 <Image
                                 src="/hero_banner/highlights/culinary_highlight.png"
                                 alt="text scribble"
@@ -95,9 +89,8 @@ export const HeroBanner: FunctionComponent = () => {
                     </p>
                     <p>
                         A <span id="cat" onClick={() => {
-                            resetTimer();
                             setCurrentHeroImg(heroImages.cat);
-                        }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>cat enthusiast
+                        }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>cat enthusiast
                                 <Image
                                 src="/hero_banner/highlights/cat_highlight.png"
                                 alt="text scribble"
@@ -111,9 +104,8 @@ export const HeroBanner: FunctionComponent = () => {
                     </p>
                     <p>
                         and <span id="storyteller" onClick={() => {
-                            resetTimer();
                             setCurrentHeroImg(heroImages.storyteller);
-                        }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>visual storyteller
+                        }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>visual storyteller
                                 <Image
                                 src="/hero_banner/highlights/storyteller_highlight.png"
                                 alt="text scribble"
@@ -127,7 +119,7 @@ export const HeroBanner: FunctionComponent = () => {
                     </p>
 
                 </div>
-                <div className="relative bottom-10  mt-20 text-xl">
+                <div className="relative bottom-10 mt-20 text-xl tracking-normal">
                     <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /></Link>
                 </div>
             </div>
