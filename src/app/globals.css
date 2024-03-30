@@ -33,7 +33,7 @@
 @media (min-width: 900px) {
 
   .hero-banner-bg {
-    height: calc(100vh - 4rem);
+    height: calc(100% - 4rem);
   }
 }
 
