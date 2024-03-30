@@ -63,6 +63,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.default ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>UX designer
                                 <Image
                                 src="/hero_banner/highlights/ux_designer_highlight.png"
+                                alt="highlight ux designer"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -77,6 +78,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`} >Culinary wizard
                                 <Image
                                 src="/hero_banner/highlights/culinary_highlight.png"
+                                alt="highlight culinary wizard"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -91,6 +93,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>cat enthusiast
                                 <Image
                                 src="/hero_banner/highlights/cat_highlight.png"
+                                alt="highlight cat enthusiast"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -105,7 +108,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>visual storyteller
                                 <Image
                                 src="/hero_banner/highlights/storyteller_highlight.png"
-                                alt="text scribble"
+                                alt="highlight visual storyteller"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
