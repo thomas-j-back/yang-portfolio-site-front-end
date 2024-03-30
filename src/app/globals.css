@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "./case_study/index.css";
+@import "./ui_components/font_css/general-sans.css";
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -9,10 +10,8 @@
 }
 
 @font-face {
-  font-family: 'General Sans';
-  font-style: normal;
-  src: url('/public/fonts/GeneralSans-Regular.otf');
-
+  font-family: 'GS';
+  src: url('/public/fonts/GeneralSans-Regular.woff')
 }
 
 :root {
@@ -23,8 +22,11 @@
 
 }
 
+
+
+
 .hero-banner-bg {
-  height: calc(auto - 4rem);
+  height: calc(100vh - 4rem);
   /* padding-top: 4rem; */
 }
 

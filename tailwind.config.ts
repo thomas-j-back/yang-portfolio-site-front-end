@@ -45,7 +45,7 @@ const config: Config = {
     },
     fontFamily: {
       neue: ['Helvetica Neue'],
-      generalsans: ['General Sans']
+      gs: ['GS']
     },
     extend: {
       // backgroundImage: {

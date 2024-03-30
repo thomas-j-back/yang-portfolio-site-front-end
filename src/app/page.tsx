@@ -1,109 +1,21 @@
 'use client'
 import { CasePreview } from './ui_components/case_preview'
-import { HeroImage } from './ui_components/hero_banner/hero_image'
-import Link from "next/link"
-import Image from "next/image"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { HeroBanner } from './ui_components/hero_banner/hero_banner'
 import { motion } from "framer-motion"
 import React from 'react'
 
 
 export default function Home() {
 
-    const heroImages = {
-        default: '/hero_banner/ux_designer_1.png',
-        culinary: '/hero_banner/culinary.png',
-        cat: '/hero_banner/cat_enthusiast.png',
-        storyteller: '/hero_banner/storyteller.png'
-    }
-
-    //Toggle selected hero image
-    const [currentHeroImg, setCurrentHeroImg] = React.useState(heroImages.default)
 
 
     return (
         <div>
             {/* hero banner */}
-            <motion.div initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-52 2xl:px-96 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
-                <div>
-                    <div className="font-bold text-4xl relative z-10">
-                        <p>
-                            Hi! I&apos;m Yang.</p>
-                        <p>
-                            <span id="ux_designer" onClick={() => {
-                                setCurrentHeroImg(heroImages.default);
-                            }} className={`${currentHeroImg == heroImages.default ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>UX designer
-                                <Image
-                                    src="/hero_banner/highlights/ux_designer_highlight.png"
-                                    alt="text scribble"
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                    style={{ width: '100%', top: '-12px' }}
-                                    className={`${currentHeroImg == heroImages.default ? '' : 'hidden'} absolute -z-10`}
-                                />
-                            </span> by day,
-                    </p>
-                        <p>
-                            <span id="culinary" onClick={() => {
-                                setCurrentHeroImg(heroImages.culinary);
-                            }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`} >Culinary wizard
-                                <Image
-                                    src="/hero_banner/highlights/culinary_highlight.png"
-                                    alt="text scribble"
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                    style={{ width: '100%', bottom: '-2px' }}
-                                    className={`${currentHeroImg == heroImages.culinary ? '' : 'hidden'} absolute -z-10`}
-                                />
-                            </span> by night,
-                    </p>
-                        <p>
-                            A <span id="cat" onClick={() => {
-                                setCurrentHeroImg(heroImages.cat);
-                            }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>cat enthusiast
-                                <Image
-                                    src="/hero_banner/highlights/cat_highlight.png"
-                                    alt="text scribble"
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                    style={{ width: '100%', right: '5px', bottom: '-5px' }}
-                                    className={`${currentHeroImg == heroImages.cat ? '' : 'hidden'} absolute -z-10`}
-                                />
-                            </span> 24/7,
-                    </p>
-                        <p>
-                            and <span id="storyteller" onClick={() => {
-                                setCurrentHeroImg(heroImages.storyteller);
-                            }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative`}>visual storyteller
-                                <Image
-                                    src="/hero_banner/highlights/storyteller_highlight.png"
-                                    alt="text scribble"
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                    style={{ width: '100%', height: '127%', right: '-22px', bottom: '-13px' }}
-                                    className={`${currentHeroImg == heroImages.storyteller ? '' : 'hidden'} absolute -z-10`}
-                                />
-                            </span>
-                        </p>
-
-                    </div>
-                    <div className="relative bottom-10  mt-20 text-xl">
-                        <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /></Link>
-                    </div>
-                </div>
-                <div>
-                    <HeroImage key={currentHeroImg} imageSrc={currentHeroImg} imageAlt="UX Designer Yang Liu" />
-                </div>
-            </motion.div>
+            <HeroBanner />
 
             <motion.div id="case_previews"
-                className="pt-8 px-8 md:px-20 lg:px-32 xl:px-52 2xl:px-96 last:mb-10"
+                className="pt-8 px-8 md:px-20 lg:px-32 xl:px-64 2xl:px-96 last:mb-10"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }} >
                 <CasePreview
