@@ -1,0 +1,39 @@
+name: dev precheck
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  lint:
+    name: check lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['20.x']
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run lint
+  cypress_tests:
+      name: cypress component test
+      runs-on: ubuntu-latest
+      strategy:
+        matrix:
+          node-version: ['20.x']
+      steps:
+        - name: clone repo
+          uses: actions/checkout@v2
+        - name: Use Node.Js ${{ matrix.node-version}}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+        - run: npm i
+        - run: npm run component:headless
+          
