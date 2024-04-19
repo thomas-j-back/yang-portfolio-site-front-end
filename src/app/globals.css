@@ -26,14 +26,16 @@
 
 
 .hero-banner-bg {
-  height: calc(100vh - 4rem);
+  height: calc(100% - 4rem);
+  padding-top: 0 !important;
+
   /* padding-top: 4rem; */
 }
 
 @media (min-width: 900px) {
 
   .hero-banner-bg {
-    height: calc(100% - 4rem);
+    height: calc(100vh - 4rem);
   }
 }
 
