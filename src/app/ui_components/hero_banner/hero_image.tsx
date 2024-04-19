@@ -24,14 +24,12 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
         },
     }
 
-    const imageLoader = () => {
-        return selectedImage;
-    }
+
 
     return (
         <AnimatePresence>
             <motion.div
-                className="flex items-center justify-center h-100"
+                className="flex justify-center"
                 exit={{ opacity: 0 }}
                 initial={{ opacity: 0 }}
                 transition={
@@ -40,11 +38,10 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
                 animate={{ opacity: 1, y: 0 }}>
                 <Image
                     src={selectedImage}
-                    loader={imageLoader}
                     alt={selectedImageAlt}
                     width={0}
                     height={0}
-                    sizes="100vh"
+                    sizes="100vw"
                     style={imageProps.css}
                     priority
                 />

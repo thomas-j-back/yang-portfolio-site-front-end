@@ -36,16 +36,17 @@ export const HeroBanner: FunctionComponent = () => {
     }
 
     useEffect(() => {
-        const intervalVals = {
-            interval: 5000,
-            intervalId: -1
-        }
-        intervalVals.intervalId = window.setInterval(revolveImage, intervalVals.interval);
-        return () => {
-            window.clearInterval(intervalVals.intervalId)
-        }
+        // const intervalVals = {
+        //     interval: 5000,
+        //     intervalId: -1
+        // }
+        // intervalVals.intervalId = window.setInterval(revolveImage, intervalVals.interval);
+        // return () => {
+        //     window.clearInterval(intervalVals.intervalId)
+        // }
 
     })
+
 
 
 
@@ -53,16 +54,16 @@ export const HeroBanner: FunctionComponent = () => {
         <motion.div initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }} className="hero-banner-bg bg-white text-black pt-8 px-8 pb-16 md:px-20 lg:px-32 xl:px-64 2xl:px-96 flex flex-col justify-center grid  sm:grid-cols-2 grid-cols-1 items-center justify-center gap-0 sm:gap-4">
             <div>
-                <div className="font-semibold lg:text-4xl text-3xl relative z-10">
+                <div className="font-semibold tracking-tight md:text-4xl text-3xl relative z-10">
                     <p>
                         Hi! I&apos;m Yang.</p>
                     <p>
                         <span id="ux_designer" onClick={() => {
                             setCurrentHeroImg(heroImages.default);
                         }} className={`${currentHeroImg == heroImages.default ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>UX designer
-                            <Image
+                                <Image
                                 src="/hero_banner/highlights/ux_designer_highlight.png"
-                                alt="text scribble"
+                                alt="highlight ux designer"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -77,7 +78,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.culinary ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`} >Culinary wizard
                                 <Image
                                 src="/hero_banner/highlights/culinary_highlight.png"
-                                alt="text scribble"
+                                alt="highlight culinary wizard"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -92,7 +93,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.cat ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>cat enthusiast
                                 <Image
                                 src="/hero_banner/highlights/cat_highlight.png"
-                                alt="text scribble"
+                                alt="highlight cat enthusiast"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -107,7 +108,7 @@ export const HeroBanner: FunctionComponent = () => {
                         }} className={`${currentHeroImg == heroImages.storyteller ? 'span-selected' : 'text-hero-highlight'} cursor-pointer relative whitespace-nowrap`}>visual storyteller
                                 <Image
                                 src="/hero_banner/highlights/storyteller_highlight.png"
-                                alt="text scribble"
+                                alt="highlight visual storyteller"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -118,7 +119,7 @@ export const HeroBanner: FunctionComponent = () => {
                     </p>
 
                 </div>
-                <div className="relative bottom-10  mt-20 text-xl">
+                <div className="relative bottom-10 mt-20 text-xl tracking-normal">
                     <Link href="#case_previews">View Projects <FontAwesomeIcon className="ml-2" icon={faArrowDown} /></Link>
                 </div>
             </div>
