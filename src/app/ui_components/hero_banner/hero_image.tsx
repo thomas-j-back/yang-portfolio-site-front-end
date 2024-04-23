@@ -9,8 +9,8 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
     imageSrc,
     imageAlt
 }) => {
-    const [selectedImage, setSelectedImage] = React.useState('/hero_banner/ux_designer_1.png');
-    const [selectedImageAlt, setImageAlt] = React.useState('UX Designer Yang Liu')
+    const [selectedImage, setSelectedImage] = React.useState(imageSrc);
+    const [selectedImageAlt, setImageAlt] = React.useState(imageAlt)
 
     React.useEffect(() => {
         setSelectedImage(imageSrc)
