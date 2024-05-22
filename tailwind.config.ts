@@ -38,6 +38,7 @@ const config: Config = {
       'accent-dark' : '#384139',
       'footer' :'#000000',
       'soft-gray': '#575757',
+      'faint-gray':'#F5F5F5',
       'light-gray': '#839599',
       'fill-grey': '#F3F4F5',
       'dark-gray': '#505B5D',

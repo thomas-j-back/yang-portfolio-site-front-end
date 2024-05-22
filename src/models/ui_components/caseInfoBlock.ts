@@ -3,5 +3,6 @@ import { IconDefinition } from "../../../node_modules/@fortawesome/fontawesome-s
 export type CaseInfoBlockProps = {
     icon: IconDefinition,
     title: string,
-    infoRows: string[]
+    infoRows: string[],
+    bulleted?: boolean
 } 

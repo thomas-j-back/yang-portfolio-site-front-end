@@ -33,6 +33,11 @@ export default function navBar() {
                                     <p>About</p>
                                 </Link>
                             </li>
+                            <li>
+                                <Link href={navConfig.ABOUT}>
+                                    <p>Resume</p>
+                                </Link>
+                            </li>
                         </ul>
 
                     </div>

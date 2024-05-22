@@ -24,8 +24,6 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
         },
     }
 
-
-
     return (
         <AnimatePresence>
             <motion.div
