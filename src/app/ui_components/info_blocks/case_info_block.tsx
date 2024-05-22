@@ -7,23 +7,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const CaseInfoBlock: FunctionComponent<CaseInfoBlockProps> = ({
     icon,
     title,
-    infoRows
+    infoRows,
+    bulleted
 }) => (
     //
-    <div className="text-light-gray text-base">
-        <div className="flex flex-row pb-2 items-center">
+    <div className="text-black text-sm">
+        <div className="text-sm bg-faint-gray flex flex-row p-4 items-center rounded-md mb-4">
             <FontAwesomeIcon className="mr-4" icon={icon} />
-            <p className="font-bold">{title}</p>
+            <h1 className="font-semibold">{title}</h1>
         </div>
-        <div>
+        <ul className="leading-6">
             {
                 infoRows.map((name, i) => {
-                    return <div key={i + name} className="font-light">
-                        {name}
-                    </div>
+                    if (bulleted) {
+                        return (<li className="list-disc list-inside" key={i + name}>
+                            {name}
+                        </li>)
+                    } else {
+                        return (<div key={i + name}>
+                            {name}
+                        </div>)
+                    }
+
                 })
             }
-        </div>
+        </ul>
 
     </div>
 )

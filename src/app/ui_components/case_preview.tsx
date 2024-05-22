@@ -36,7 +36,7 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
     }
     const caseVariants = {
         transition: {
-            duration: 0.6,
+            duration: 0.5,
             delay: 0.1
         },
         left: {
@@ -71,10 +71,10 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
 
     return (
         <motion.div className="flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-5 gap-x-1 mb-28">
-            <motion.div initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.9 }} variants={caseVariants.left} className="max-w-sm flex flex-col justify-between">
+            <motion.div initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.5 }} variants={caseVariants.left} className="max-w-sm flex flex-col justify-between">
                 <div className="flex-1">
                     <h1 className="font-medium text-3xl ">{title}</h1>
-                    <motion.div whileInView="animate" viewport={{ once: true, amount: 0.9 }} transition={caseVariants.transition} initial="initial" variants={profVariants.parent} className="flex flex-row flex-wrap justify-start gap-x-2 gap-y-4 py-6">
+                    <motion.div whileInView="animate" viewport={{ once: true, amount: 0.5 }} transition={caseVariants.transition} initial="initial" variants={profVariants.parent} className="flex flex-row flex-wrap justify-start gap-x-2 gap-y-4 py-6">
                         {
                             proficiencies.map((name, i) => {
                                 return <motion.div variants={profVariants.block} key={i + name} className="font-normal rounded-md py-1 px-3 text-xs bg-accent text-accent-dark">
@@ -89,7 +89,7 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                     View Project <FontAwesomeIcon className="ml-2 text-lg" icon={faArrowRight} />
                 </Link>
             </motion.div>
-            <motion.div transition={caseVariants.transition} initial="initial" viewport={{ once: true, amount: 0.9 }} whileInView="animate" variants={caseVariants.right} className="pb-6 md:pb-0">
+            <motion.div transition={caseVariants.transition} initial="initial" viewport={{ once: true, amount: 0.5 }} whileInView="animate" variants={caseVariants.right} className="pb-6 md:pb-0">
                 <Link href={pageRoute}>
                     <Image
                         src={previewImage}
