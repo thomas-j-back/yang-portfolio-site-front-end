@@ -71,8 +71,9 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
         },
         col_css: {
 
-            borderRadius: '15px',
-            width: 'fit-content'
+            borderRadius: '1px',
+            maxHeight: '17rem',
+            objectFit: 'cover'
         }
 
     }

@@ -22,7 +22,7 @@ export const OtherProjects: FunctionComponent<OtherProjectProps> = ({
                 <h1 className="font-semibold text-3xl mb-8 text-dark-text">
                     Other Projects
                 </h1>
-                <section className="grid sm:grid-cols-2 grid-cols-1 gap-y-4 gap-x-8">
+                <section className="grid sm:grid-cols-2 grid-cols-1 gap-y-8 gap-x-8">
                     <CasePreview
                         title={proj_1.title}
                         proficiencies={proj_1.proficiencies}
