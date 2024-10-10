@@ -3,6 +3,6 @@ export type CasePreviewProps = {
     title: string,
     description: string,
     previewImage: string,
-    pageRoute: string
-
+    pageRoute: string,
+    layout?: string
 } 

@@ -41,7 +41,7 @@ export const HeroImage: FunctionComponent<HeroImageProps> = ({
                     height={0}
                     sizes="100vw"
                     style={imageProps.css}
-                    priority
+                    priority={true}
                 />
             </motion.div>
         </AnimatePresence>
