@@ -1,7 +1,7 @@
 'use client'
 import React, { FunctionComponent } from 'react'
 import { allProjects } from '../../ui_components/consts'
-import { OtherProjectProps } from '../../models/ui_components/otherProjectProps'
+import { OtherProjectProps } from '../../../models/ui_components/otherProjectProps'
 import Image from 'next/image'
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

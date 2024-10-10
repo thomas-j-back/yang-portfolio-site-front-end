@@ -22,6 +22,7 @@ export default function Home() {
                 {
                     allProjects.map((proj, i) => {
                         return <CasePreview
+                            key={i}
                             title={proj.title}
                             proficiencies={proj.proficiencies}
                             description={proj.description}
