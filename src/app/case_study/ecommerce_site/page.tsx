@@ -4,6 +4,7 @@ import { faCalendar, faUser, faScrewdriverWrench, faPenRuler, faListCheck, faMed
 import { KPIBlock } from '../../ui_components/info_blocks/kpi_block'
 import Image from 'next/image'
 import { KPITypes } from "@/models/ui_components/kpiBlock";
+import { OtherProjects } from "@/app/ui_components/other_projects/other_projects";
 
 
 export default function caseStudy() {
@@ -258,6 +259,9 @@ export default function caseStudy() {
                     />
                 </div>
             </div>
+            <OtherProjects
+                currentProjectIndex={0}
+            ></OtherProjects>
 
 
         </main>)

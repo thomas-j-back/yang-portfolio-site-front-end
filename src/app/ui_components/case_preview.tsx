@@ -13,7 +13,8 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
     proficiencies,
     description,
     previewImage,
-    pageRoute
+    pageRoute,
+    layout
 }) => {
     const profVariants = {
         parent: {
@@ -66,14 +67,24 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
         css: {
             height: 'auto',
             width: '100%',
+            borderRadius: '15px'
         },
+        col_css: {
+
+            borderRadius: '15px',
+            width: 'fit-content'
+        }
+
     }
 
     return (
-        <motion.div className="flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-5 gap-x-1 mb-28">
+        <motion.div className={layout == 'column' ? 'flex flex-col-reverse content-center justify-between sm:gap-x-5 gap-x-1' : "flex flex-col-reverse even:sm:flex-row odd:sm:flex-row-reverse justify-between sm:gap-x-5 gap-x-1 mb-28"}>
             <motion.div initial="initial" whileInView="animate" viewport={{ once: true, amount: 0.5 }} variants={caseVariants.left} className="max-w-sm flex flex-col justify-between">
                 <div className="flex-1">
-                    <h1 className="font-medium text-3xl ">{title}</h1>
+                    {layout !== 'column' &&
+                        <h1 className="font-medium text-3xl">{title}</h1>
+                    }
+
                     <motion.div whileInView="animate" viewport={{ once: true, amount: 0.5 }} transition={caseVariants.transition} initial="initial" variants={profVariants.parent} className="flex flex-row flex-wrap justify-start gap-x-2 gap-y-4 py-6">
                         {
                             proficiencies.map((name, i) => {
@@ -95,10 +106,15 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
                         src={previewImage}
                         width={350}
                         height={350}
-                        style={imageProps.css}
+                        style={layout == 'column' ? imageProps.col_css : imageProps.css}
                         alt={title}
                     />
                 </Link>
+                {layout == 'column' &&
+                    <h1 className="font-medium text-2xl mt-4">{title}</h1>
+                }
+
+
             </motion.div>
         </motion.div>)
 }
