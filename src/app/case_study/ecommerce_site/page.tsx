@@ -149,7 +149,8 @@ export default function caseStudy() {
                         </ul>
                     </div>
                     <div>
-                        <Image alt={"Loyal Customers"}
+                        <Image
+                            alt={"Loyal Customers"}
                             src={"/ecommerce_site/graphics/loyal_customers.png"}
                             width={200}
                             height={0}
@@ -169,7 +170,8 @@ export default function caseStudy() {
                         </ul>
                     </div>
                     <div>
-                        <Image alt={"Classic Customers"}
+                        <Image
+                            alt={"Classic Customers"}
                             src={"/ecommerce_site/graphics/classic_customers.png"}
                             width={200}
                             height={0}
@@ -215,6 +217,7 @@ export default function caseStudy() {
                     </div>
                 </div>
                 <Image
+                    alt="Design research from competitor implentations"
                     src={"/ecommerce_site/diagrams/cvs_example.png"}
                     width={0}
                     height={0}
@@ -251,6 +254,7 @@ export default function caseStudy() {
                     </div>
                 </div>
                 <Image
+                    alt="Design discovery process"
                     src={"/ecommerce_site/diagrams/auth_ship.png"}
                     width={0}
                     height={0}
@@ -273,6 +277,7 @@ export default function caseStudy() {
                 <div>
                     <div className="text-sm text-hero-highlight mb-4">Design Explorations</div>
                     <Image
+                        alt="Least aggressive approach design exploration"
                         src={"/ecommerce_site/diagrams/ratio_1.png"}
                         width={0}
                         height={0}
@@ -282,6 +287,7 @@ export default function caseStudy() {
                     <div className="text-sm text-hero-highlight mb-4 mt-16">Final Design</div>
 
                     <Image
+                        alt="Least aggressive approach design implentation"
                         src={"/ecommerce_site/diagrams/ratio_2.png"}
                         width={0}
                         height={0}
@@ -296,6 +302,7 @@ export default function caseStudy() {
                 <div>
                     <div className="text-sm text-hero-highlight mb-4">Design Explorations</div>
                     <Image
+                        alt="Most aggressive approach design exploration"
                         src={"/ecommerce_site/diagrams/2_ratio.png"}
                         width={0}
                         height={0}
@@ -305,6 +312,7 @@ export default function caseStudy() {
                     <div className="text-sm text-hero-highlight mb-4 mt-16">Final Design</div>
 
                     <Image
+                        alt="Most aggressive approach design implentation"
                         src={"/ecommerce_site/diagrams/2_ratio_2.png"}
                         width={0}
                         height={0}
@@ -318,6 +326,7 @@ export default function caseStudy() {
                 </div>
                 <div>
                     <Image
+                        alt="Aggressive approach design exploration"
                         src={"/ecommerce_site/diagrams/aggressive_1.png"}
                         width={0}
                         height={0}
@@ -328,6 +337,7 @@ export default function caseStudy() {
 
 
                     <Image
+                        alt="Aggressive approach design implementation"
                         src={"/ecommerce_site/diagrams/agressive_2.png"}
                         width={0}
                         height={0}

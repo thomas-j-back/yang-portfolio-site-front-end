@@ -1,5 +1,5 @@
 'use client'
-import React, { FunctionComponent } from 'react'
+import React, { CSSProperties, FunctionComponent } from 'react'
 import { CasePreviewProps } from '../../models/ui_components/casePreview'
 import Image from 'next/image'
 import Link from "next/link"
@@ -68,13 +68,13 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
             height: 'auto',
             width: '100%',
             borderRadius: '15px'
-        },
+        } as CSSProperties,
         col_css: {
 
             borderRadius: '1px',
             maxHeight: '17rem',
             objectFit: 'cover'
-        }
+        } as CSSProperties
 
     }
 
