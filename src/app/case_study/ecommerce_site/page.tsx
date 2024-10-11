@@ -10,7 +10,15 @@ import { OtherProjects } from "@/app/ui_components/other_projects/other_projects
 export default function caseStudy() {
     return (
         <main>
-            <div className="ecommerce-hero-banner-bg sm:h-100 text-white px-8 md:px-20 lg:px-32 xl:px-52">
+            <div className="ecommerce-hero-banner-bg sm:h-screen relative w-100" >
+                <Image
+                    priority
+                    src={'/ecommerce_site/ecommerce_hero_banner.png'}
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
+                    alt="Laptops displaying R+F's checkout page"
+                />
             </div>
             <section className="py-8 px-8 md:px-20 lg:px-32 xl:px-52">
                 <h1 className="font-bold text-5xl mb-7 text-dark-text">
@@ -81,31 +89,122 @@ export default function caseStudy() {
                         <Image
                             alt={"Frustrated user slumped over keyboard"}
                             src={"/ecommerce_site/graphics/customer_frustrated.png"}
-                            width={0}
+                            width={200}
                             height={0}
                             sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }} />
+                            objectFit="cover" />
                         <p>Poor customer experience</p>
                     </div>
                     <div>
                         <Image alt={"Frustrated user slumped over keyboard"}
                             src={"/ecommerce_site/graphics/big_wallet.png"}
-                            width={0}
+                            width={200}
                             height={0}
                             sizes="100vw"
-                            style={{ width: 'auto', height: '100%' }} />
+                            objectFit="cover" />
                         <p>Intervention incurred extra costs.</p>
 
                     </div>
                     <div>
                         <Image alt={"Frustrated user slumped over keyboard"}
                             src={"/ecommerce_site/graphics/big_list.png"}
-                            width={0}
+                            width={200}
                             height={0}
                             sizes="100vw"
-                            style={{ width: '100%', height: 'auto' }} />
+                            objectFit="cover" />
                         <p>Over $18,000 fine in 1 Week</p>
 
+                    </div>
+                </div>
+            </div>
+            <div className="py-8 px-8 md:px-20 lg:px-32 xl:px-52">
+                <h1 className="text-lg text-hero-highlight mb-4">Main Pain Points</h1>
+                <h2 className="font-semibold text-3xl mb-4">Lack of awareness and Limited support for customers decision-making</h2>
+                <p className="text-sm mb-5">After analyzing our previous shipping restriction solutions, I identified two main user pain points and they are including late notifications and unclear identification, as well as communication gaps resulting in increased customer support interactions and missed sales opportunities.</p>
+            </div>
+            <div className="py-8 px-8 md:px-20 lg:px-32 xl:px-52">
+                <h1 className="text-lg text-hero-highlight mb-4">User Groups</h1>
+                <h2 className="font-semibold text-3xl mb-4">Catering to Three Distinct User Groups</h2>
+                <p className="text-sm mb-5">Rodan and Fileds is a B2C e-commerce company specializing in premium skincare and haircare products. This project aims to improve how we handle shipping restrictions throughout our customer&apos;s journey. However, the old solution is under performed and caused lot issue.</p>
+                <div className="sm:gap-y-0 grid xs:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-6 font-semibold text-md">
+                    <div>
+                        <Image
+                            alt={"Guest Customers"}
+                            src={"/ecommerce_site/graphics/guest_customers.png"}
+                            width={200}
+                            height={0}
+                            sizes="100vw"
+                            objectFit="cover" />
+                        <p>Guest Customers</p>
+                        <ul className="leading-6 text-sm font-normal">
+                            <li className="list-disc list-inside">
+                                No account
+                            </li>
+                            <li className="list-disc list-inside">
+                                Limited awareness
+                            </li>
+                            <li className="list-disc list-inside">
+                                High-international shopper
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <Image alt={"Loyal Customers"}
+                            src={"/ecommerce_site/graphics/loyal_customers.png"}
+                            width={200}
+                            height={0}
+                            sizes="100vw"
+                            objectFit="cover" />
+                        <p>Loyal Customers</p>
+                        <ul className="leading-6 text-sm font-normal">
+                            <li className="list-disc list-inside">
+                                Has an active subscription
+                            </li>
+                            <li className="list-disc list-inside">
+                                Higher expectations
+                            </li>
+                            <li className="list-disc list-inside">
+                                Exclusive  treatment.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <Image alt={"Classic Customers"}
+                            src={"/ecommerce_site/graphics/classic_customers.png"}
+                            width={200}
+                            height={0}
+                            sizes="100vw"
+                            objectFit="cover" />
+                        <p >Classic Customers</p>
+                        <ul className="leading-6 text-sm font-normal font-normal">
+                            <li className="list-disc list-inside">
+                                At least one order
+                            </li>
+                            <li className="list-disc list-inside">
+                                Efficient shopping experience.
+                            </li>
+                            <li className="list-disc list-inside">
+                                Limited tolerance
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 bg-faint-gray ">
+                <h1 className="text-lg text-hero-highlight mb-4">Problem Statement</h1>
+                <h2 className="font-bold text-4xl mb-4">How might we effectively adhere to shipping regulations, and also enhances user satisfaction?</h2>
+            </div>
+
+            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52">
+                <div className="grid sm:grid-cols-2 grid-cols-1">
+                    <div >
+                        <h1 className="text-lg text-hero-highlight mb-4">Research</h1>
+                        <h2 className="font-semibold text-black text-3xl mb-4">Competitive Analysis</h2>
+                        <p className="mb-5 text-sm text-hero-highlight">I began my research by examining various platforms such as REI, Sephora, and CVS. Analyzing how these platforms communicate information about shipping restricted items at different shopping stages, I gained valuable insights. </p>
+                    </div>
+                    <div>
+                        <p>Misalignment with Business Requirement Documentation Misalignment with Business Requirement Documentation Misalignment with Business Requirement DocumentationMisalignment with Business Requirement Documentation.</p>
                     </div>
                 </div>
             </div>
@@ -264,5 +363,5 @@ export default function caseStudy() {
             ></OtherProjects>
 
 
-        </main>)
+        </main >)
 }
