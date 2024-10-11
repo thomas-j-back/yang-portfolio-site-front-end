@@ -112,7 +112,7 @@ export default function caseStudy() {
                             height={0}
                             sizes="100vw"
                             objectFit="cover" />
-                        <p>Over $18,000 fine in 1 Week</p>
+                        <p>Over $18,000 of fines in 1 Week</p>
 
                     </div>
                 </div>
@@ -193,19 +193,149 @@ export default function caseStudy() {
             </div>
             <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 bg-faint-gray ">
                 <h1 className="text-lg text-hero-highlight mb-4">Problem Statement</h1>
-                <h2 className="font-bold text-4xl mb-4">How might we effectively adhere to shipping regulations, and also enhances user satisfaction?</h2>
+                <h2 className="font-bold text-4xl mb-4">How might we effectively adhere to shipping regulations, while also enhancing user satisfaction?</h2>
             </div>
 
             <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52">
-                <div className="grid sm:grid-cols-2 grid-cols-1">
-                    <div >
-                        <h1 className="text-lg text-hero-highlight mb-4">Research</h1>
+                <h1 className="text-lg text-hero-highlight mb-4">Research</h1>
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8">
+                    <div>
                         <h2 className="font-semibold text-black text-3xl mb-4">Competitive Analysis</h2>
                         <p className="mb-5 text-sm text-hero-highlight">I began my research by examining various platforms such as REI, Sephora, and CVS. Analyzing how these platforms communicate information about shipping restricted items at different shopping stages, I gained valuable insights. </p>
                     </div>
                     <div>
-                        <p>Misalignment with Business Requirement Documentation Misalignment with Business Requirement Documentation Misalignment with Business Requirement DocumentationMisalignment with Business Requirement Documentation.</p>
+                        <ul className="text-hero-highlight leading-6 text-sm font-normal">
+                            <li className="list-disc list-inside"><span className="font-bold">Early Notification</span>
+                                <p>Inform users about potential restrictions early in the shopping journey.</p>
+                            </li>
+                            <li className="list-disc list-inside"><span className="font-bold">Targeted communication</span>
+                                <p>Only alert users directly affected by restrictions to avoid disrupting casual browsing.</p>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <Image
+                    src={"/ecommerce_site/diagrams/cvs_example.png"}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }} // optional
+                />
+                <div className="my-16 grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8">
+                    <div>
+                        <h2 className="font-semibold text-black text-3xl mb-4">Secondary Research</h2>
+                        <p className="mb-5 text-sm text-hero-highlight">Capturing attention play a crucial role in enhancing awareness. So Finding the sweet spot in seeking the right amount of attention is key as we refine our strategy. To achieve this, I conducted secondary research to gain insights on effectively striking the balance when notifying our customers about shipping-restricted items.</p>
+                    </div>
+                    <div>
+                        <ul className="text-hero-highlight leading-6 text-sm font-normal">
+                            <li className="list-disc list-inside"><span className="font-bold">Consider urgency and user actions</span>
+                                <p>Tailor communication based on importance and what users can do.</p>
+                            </li>
+                            <li className="list-disc list-inside"><span className="font-bold">Guide users to solutions</span>
+                                <p>Provide clear pathways to resolve issues.</p>
+                            </li>
+                            <li className="list-disc list-inside"><span className="font-bold">Utilize color and variation</span>
+                                <p>vEmploy strategic color choices and diverse approaches for better engagement.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 className="text-lg text-hero-highlight mb-4">Design Discovery</h1>
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 mb-8">
+                    <div>
+                        <h2 className="font-semibold text-black text-3xl mb-4">Analyzing User Needs for Shipping Restrictions Communication</h2>
+                    </div>
+                    <div>
+                        <p className="mb-5 text-sm text-hero-highlight">My design discovery process involves analyzing user needs at different stages of the shopping journey to gain insight into how we should communicate information about shipping-restricted items.</p>
+
+                    </div>
+                </div>
+                <Image
+                    src={"/ecommerce_site/diagrams/auth_ship.png"}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }} // optional
+                />
+                <h1 className="mt-16 text-lg text-hero-highlight mb-4">Design Exploration</h1>
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 mb-8">
+                    <div>
+                        <h2 className="font-semibold text-black text-3xl mb-4">Enhance awareness during different stages of the shopping process</h2>
+                    </div>
+                    <div>
+                        <p className="mb-5 text-sm text-hero-highlight">Based on research insights, I designed solutions to keep customers informed about shipping restrictions throughout the shopping journey. This involved exploring various UI options and A/B testing indicator placements to optimize user awareness.</p>
+                    </div>
+                </div>
+                <div className="py-8">
+                    <p className="text-lg font-semibold mb-2">🟡 Moderate Urgency</p>
+                    <p className="text-hero-highlight">For moderate restrictions, we explored contextual and passive notifications. The language used is purely informative, avoiding instructions.</p>
+                </div>
+                <div>
+                    <div className="text-sm text-hero-highlight mb-4">Design Explorations</div>
+                    <Image
+                        src={"/ecommerce_site/diagrams/ratio_1.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
+                    />
+                    <div className="text-sm text-hero-highlight mb-4 mt-16">Final Design</div>
+
+                    <Image
+                        src={"/ecommerce_site/diagrams/ratio_2.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
+                    />
+                </div>
+                <div className="py-8">
+                    <p className="text-lg font-semibold mb-2">🔴 Most Aggressive </p>
+                    <p className="text-hero-highlight">For moderate restrictions, we explored contextual and passive notifications. The language used is purely informative, avoiding instructions.</p>
+                </div>
+                <div>
+                    <div className="text-sm text-hero-highlight mb-4">Design Explorations</div>
+                    <Image
+                        src={"/ecommerce_site/diagrams/2_ratio.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
+                    />
+                    <div className="text-sm text-hero-highlight mb-4 mt-16">Final Design</div>
+
+                    <Image
+                        src={"/ecommerce_site/diagrams/2_ratio_2.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
+                    />
+                </div>
+                <div className="py-8">
+                    <p className="text-lg font-semibold mb-2">🟠 Aggressive</p>
+                    <p className="text-hero-highlight">In the post-purchase stage, where restricted information is moderately urgent, this design treatment primarily targets loyal customers with an active subscription cart. Clear communication of restrictions is crucial after auto-purchase, particularly for customers making future decisions based on shipping limitations.</p>
+                </div>
+                <div>
+                    <Image
+                        src={"/ecommerce_site/diagrams/aggressive_1.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
+                    />
+                    <div className="text-sm text-hero-highlight mb-16 mt-4">To avoid banner blindness and differentiate from promotions, we opted for a modal window. This targeted approach allows users to focus on the shipping limitations immediately upon login, with a clear call to action for managing their subscriptions.</div>
+
+
+                    <Image
+                        src={"/ecommerce_site/diagrams/agressive_2.png"}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
+                    />
+                    <div className="text-sm text-hero-highlight mt-4 ">For moderately urgent post-purchase scenarios (e.g., subscription updates), emails need provide comprehensive information about shipping restrictions with a clear action button for resolving any issues.</div>
+
                 </div>
             </div>
 
