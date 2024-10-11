@@ -68,13 +68,16 @@ export const CasePreview: FunctionComponent<CasePreviewProps> = ({
             height: 'auto',
             width: '100%',
             borderRadius: '15px'
-        } as CSSProperties,
+
+        } as React.CSSProperties,
         col_css: {
 
             borderRadius: '1px',
             maxHeight: '17rem',
             objectFit: 'cover'
-        } as CSSProperties
+
+        } as React.CSSProperties
+
 
     }
 
