@@ -122,12 +122,14 @@ export default function caseStudy() {
                 <h2 className="font-semibold text-3xl mb-4">Lack of awareness and Limited support for customers decision-making</h2>
                 <p className="text-sm mb-5">After analyzing our previous shipping restriction solutions, I identified two main user pain points and they are including late notifications and unclear identification, as well as communication gaps resulting in increased customer support interactions and missed sales opportunities.</p>
             </div>
+
+            {/* USER GROUPS EXPLANATION SECTION */}
             <div className="py-8 px-8 md:px-20 lg:px-32 xl:px-52">
                 <h1 className="text-lg text-hero-highlight mb-4">User Groups</h1>
                 <h2 className="font-semibold text-3xl mb-4">Catering to Three Distinct User Groups</h2>
                 <p className="text-sm mb-5">Rodan and Fileds is a B2C e-commerce company specializing in premium skincare and haircare products. This project aims to improve how we handle shipping restrictions throughout our customer&apos;s journey. However, the old solution is under performed and caused lot issue.</p>
-                <div className="sm:gap-y-0 grid xs:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-6 font-semibold text-md">
-                    <div>
+                <div className="sm:gap-y-0 grid sm:grid-cols-3 justify-center grid-cols-1 gap-6 font-semibold text-md">
+                    <div className="grid justify-center content-center">
                         <Image
                             alt={"Guest Customers"}
                             src={"/ecommerce_site/graphics/guest_customers.png"}
@@ -135,20 +137,23 @@ export default function caseStudy() {
                             height={0}
                             sizes="100vw"
                             objectFit="cover" />
-                        <p>Guest Customers</p>
-                        <ul className="leading-6 text-sm font-normal">
-                            <li className="list-disc list-inside">
-                                No account
+                        <div className="sm:block flex flex-col justify-center">
+                            <p>Guest Customers</p>
+                            <ul className="leading-6 text-sm font-normal">
+                                <li className="list-disc list-inside">
+                                    No account
                             </li>
-                            <li className="list-disc list-inside">
-                                Limited awareness
+                                <li className="list-disc list-inside">
+                                    Limited awareness
                             </li>
-                            <li className="list-disc list-inside">
-                                High-international shopper
+                                <li className="list-disc list-inside">
+                                    High-international shopper
                             </li>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
+
+                    <div className="grid justify-center content-center">
                         <Image
                             alt={"Loyal Customers"}
                             src={"/ecommerce_site/graphics/loyal_customers.png"}
@@ -169,7 +174,7 @@ export default function caseStudy() {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="grid justify-center content-center">
                         <Image
                             alt={"Classic Customers"}
                             src={"/ecommerce_site/graphics/classic_customers.png"}
@@ -198,9 +203,10 @@ export default function caseStudy() {
                 <h2 className="font-bold text-4xl mb-4">How might we effectively adhere to shipping regulations, while also enhancing user satisfaction?</h2>
             </div>
 
+            {/* COMPETITIVE ANALYSIS SECTION */}
             <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52">
                 <h1 className="text-lg text-hero-highlight mb-4">Research</h1>
-                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8">
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 mb-12">
                     <div>
                         <h2 className="font-semibold text-black text-3xl mb-4">Competitive Analysis</h2>
                         <p className="mb-5 text-sm text-hero-highlight">I began my research by examining various platforms such as REI, Sephora, and CVS. Analyzing how these platforms communicate information about shipping restricted items at different shopping stages, I gained valuable insights. </p>
@@ -224,7 +230,9 @@ export default function caseStudy() {
                     sizes="100vw"
                     style={{ width: '100%', height: 'auto' }} // optional
                 />
-                <div className="my-16 grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8">
+
+                {/* SECONDARY RESEARCH SECTION */}
+                <div className="my-16 grid sm:grid-cols-2 grid-cols-1 gap-x-16">
                     <div>
                         <h2 className="font-semibold text-black text-3xl mb-4">Secondary Research</h2>
                         <p className="mb-5 text-sm text-hero-highlight">Capturing attention play a crucial role in enhancing awareness. So Finding the sweet spot in seeking the right amount of attention is key as we refine our strategy. To achieve this, I conducted secondary research to gain insights on effectively striking the balance when notifying our customers about shipping-restricted items.</p>
@@ -238,13 +246,15 @@ export default function caseStudy() {
                                 <p>Provide clear pathways to resolve issues.</p>
                             </li>
                             <li className="list-disc list-inside"><span className="font-bold">Utilize color and variation</span>
-                                <p>vEmploy strategic color choices and diverse approaches for better engagement.</p>
+                                <p>Employ strategic color choices and diverse approaches for better engagement.</p>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                {/* ANALYZING USER NEEDS FOR SHIPPING SECTION */}
                 <h1 className="text-lg text-hero-highlight mb-4">Design Discovery</h1>
-                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 mb-8">
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 mb-8">
                     <div>
                         <h2 className="font-semibold text-black text-3xl mb-4">Analyzing User Needs for Shipping Restrictions Communication</h2>
                     </div>
@@ -261,8 +271,10 @@ export default function caseStudy() {
                     sizes="100vw"
                     style={{ width: '100%', height: 'auto' }} // optional
                 />
+
+                {/* ENHANCE AWARENESS SECTION */}
                 <h1 className="mt-16 text-lg text-hero-highlight mb-4">Design Exploration</h1>
-                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 mb-8">
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 mb-8">
                     <div>
                         <h2 className="font-semibold text-black text-3xl mb-4">Enhance awareness during different stages of the shopping process</h2>
                     </div>
@@ -270,11 +282,13 @@ export default function caseStudy() {
                         <p className="mb-5 text-sm text-hero-highlight">Based on research insights, I designed solutions to keep customers informed about shipping restrictions throughout the shopping journey. This involved exploring various UI options and A/B testing indicator placements to optimize user awareness.</p>
                     </div>
                 </div>
+
+                {/* MODERATE URGENCY SECTION */}
                 <div className="py-8">
                     <p className="text-lg font-semibold mb-2">🟡 Moderate Urgency</p>
                     <p className="text-hero-highlight">For moderate restrictions, we explored contextual and passive notifications. The language used is purely informative, avoiding instructions.</p>
                 </div>
-                <div>
+                <div className="mb-10">
                     <div className="text-sm text-hero-highlight mb-4">Design Explorations</div>
                     <Image
                         alt="Least aggressive approach design exploration"
@@ -295,11 +309,13 @@ export default function caseStudy() {
                         style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
                     />
                 </div>
+
+                {/* AGGRESSIVE URGENCY SECTION */}
                 <div className="py-8">
                     <p className="text-lg font-semibold mb-2">🔴 Most Aggressive </p>
                     <p className="text-hero-highlight">For moderate restrictions, we explored contextual and passive notifications. The language used is purely informative, avoiding instructions.</p>
                 </div>
-                <div>
+                <div className="mb-10">
                     <div className="text-sm text-hero-highlight mb-4">Design Explorations</div>
                     <Image
                         alt="Most aggressive approach design exploration"
@@ -345,6 +361,16 @@ export default function caseStudy() {
                         style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
                     />
                     <div className="text-sm text-hero-highlight mt-4 ">For moderately urgent post-purchase scenarios (e.g., subscription updates), emails need provide comprehensive information about shipping restrictions with a clear action button for resolving any issues.</div>
+
+                </div>
+            </div>
+            <h1 className="text-lg text-hero-highlight mb-4">Design Exploration</h1>
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 mb-8">
+                <div>
+                    <h2 className="font-semibold text-black text-3xl mb-4">Enhance Awareness from Type of Product in Question</h2>
+                </div>
+                <div>
+                    <p className="mb-5 text-sm text-hero-highlight">My design discovery process involves analyzing user needs at different stages of the shopping journey to gain insight into how we should communicate information about shipping-restricted items.</p>
 
                 </div>
             </div>
