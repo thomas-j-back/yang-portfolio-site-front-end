@@ -3,6 +3,7 @@ export type KPIBlockProps = {
     value: string,
     title: string,
     description: string
+    className?: string
 }
 
 export enum KPITypes {

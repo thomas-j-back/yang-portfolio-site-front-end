@@ -363,171 +363,96 @@ export default function caseStudy() {
                     <div className="text-sm text-hero-highlight mt-4 ">For moderately urgent post-purchase scenarios (e.g., subscription updates), emails need provide comprehensive information about shipping restrictions with a clear action button for resolving any issues.</div>
 
                 </div>
-            </div>
-            <h1 className="text-lg text-hero-highlight mb-4">Design Exploration</h1>
-            <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16 mb-8">
-                <div>
-                    <h2 className="font-semibold text-black text-3xl mb-4">Enhance Awareness from Type of Product in Question</h2>
-                </div>
-                <div>
-                    <p className="mb-5 text-sm text-hero-highlight">My design discovery process involves analyzing user needs at different stages of the shopping journey to gain insight into how we should communicate information about shipping-restricted items.</p>
+                <div className="py-16">
+                    <h1 className="text-lg text-hero-highlight mb-4">Design Exploration</h1>
+                    <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16">
+                        <div>
+                            <h2 className="font-semibold text-black text-3xl mb-4">Enhance Awareness from Type of Product in Question</h2>
+                        </div>
+                        <div>
+                            <p className="mb-5 text-sm text-hero-highlight">My design discovery process involves analyzing user needs at different stages of the shopping journey to gain insight into how we should communicate information about shipping-restricted items.</p>
 
-                </div>
-            </div>
-
-
-
-
-
-            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2 bg-fill-grey">
-                <h1 className="font-bold text-2xl sm:mb-7 text-dark-text">
-                    Core Experiences
-                </h1>
-                <p className="text-2xl font-light">How might we comply with shipping laws while minimizing product disruptions for customers in specific zip codes?</p>
-                <div className="sm:mt-20 sm:mb-40 mt-16 mb-5">
+                        </div>
+                    </div>
                     <Image
-                        alt={"Core Experiences"}
-                        src={"/user_friendly/user_friendly_preview.png"}
+                        alt="Example of awareness enhancing implementation."
+                        src={"/ecommerce_site/diagrams/awareness_feature.png"}
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }} // optional
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
                     />
+                    <p className="mt-2 text-sm">Using different language for product type.</p>
                 </div>
-            </div>
-            <div className="sm:py-16 py-10 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2">
-                <h1 className="font-bold text-2xl mb-7 text-dark-text">
-                    Problems
-                </h1>
-                <p className="text-2xl font-light mb-16">How might we comply with shipping laws while minimizing product disruptions for customers in specific zip codes?</p>
-                <div className="flex justify-end grow-1">
-                    <div className="md:w-4/6 big-icon-info-div grid gap-4 sm:grid-cols-2 grid-cols-1">
-                        <BigIconInfoBlock
-                            icon={faPenRuler}
-                            title={'Poor customer experience'}
-                            description={'Multiple orders were canceled and reprocessed, causing delays in updating customers about items not shipping. This led to increased contact with the call center.'}
-                        />
-                        <BigIconInfoBlock
-                            icon={faPenRuler}
-                            title={'Additional cost'}
-                            description={'Manual intervention was required to stop sales orders from shipping through DHL, resulting in extra expenses.'}
-                        />
-                        <BigIconInfoBlock
-                            icon={faPenRuler}
-                            title={'High-risk manual process'}
-                            description={'Failure to block orders may result in fines of $1,000 per missed order that ships.'}
-                        />
-                        <BigIconInfoBlock
-                            icon={faPenRuler}
-                            title={'Extra cost for product scrapping'}
-                            description={'Legacy products incurred additional costs for their disposal or scrapping.'}
-                        />
-                        <BigIconInfoBlock
-                            icon={faPenRuler}
-                            title={'High-risk manual process'}
-                            description={'Failure to block orders may result in fines of $1,000 per missed order that ships.'}
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className="sm:py-16 py-10 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2">
-                <h1 className="font-bold text-2xl mb-7 text-dark-text">
-                    Design Process
-                </h1>
-                <div className="flex justify-end grow-1 mb-10">
-                    <div className="sm:w-4/6 grid gap-4 sm:grid-cols-3 grid-cols-1 w-full">
-                        <div className="text-dark-gray">
-                            <p className="font-bold text-lg mb-2">Displaying warning tooltips</p>
-                            <p>Multiple orders were canceled and reprocessed, causing delays in updating.</p>
+                <div className="py-16">
+                    <h1 className="text-lg text-hero-highlight mb-4">Bundle</h1>
+                    <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-16">
+                        <div>
+                            <h2 className="font-semibold text-black text-3xl mb-4">Customization Process</h2>
                         </div>
-                        <div className="text-dark-gray">
-                            <p className="font-bold text-lg mb-2">Highlighting restriction</p>
-                            <p>Manual intervention was required to stop sales orders from shipping through DHL.</p>
-                        </div>
-                        <div className="text-dark-gray">
-                            <p className="font-bold text-lg mb-2">Highlighting restriction</p>
-                            <p>Manual intervention was required to stop sales orders from shipping through DHL.</p>
-                        </div>
-                    </div>
+                        <div>
+                            <p className="mb-5 text-sm text-hero-highlight">In the post-purchase stage, where restricted information is moderately urgent, this design treatment primarily targets loyal customers with an active subscription cart. Clear communication of restrictions is crucial after auto-purchase, particularly for customers making future decisions based on shipping limitations.</p>
 
-                </div>
-                <div className="mt-24 mb-40">
+                        </div>
+                    </div>
                     <Image
-                        alt={"Core Experiences"}
-                        src={"/user_friendly/user_friendly_preview.png"}
+                        alt="Example of awareness enhancing implementation."
+                        src={"/ecommerce_site/diagrams/bundle_feature.png"}
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }} // optional
+                        style={{ width: '100%', height: 'auto', borderRadius: '5px' }} // optional
                     />
                 </div>
-
-                <div className="text-dark-gray grid sm:grid-cols-[33%_66%] grid-cols-1">
-                    <div className="sm:mb-0 mb-4">
-                        <p className="text-sm mb-4">DESIGN</p>
-                        <p className="font-bold text-lg mb-2">Research</p>
-                    </div>
+                <div className="py-16">
+                    <h1 className="text-lg text-hero-highlight mb-4">Post-Launch</h1>
                     <div>
-                        <p>Misalignment with Business Requirement Documentation Misalignment with Business Requirement Documentation Misalignment with Business Requirement DocumentationMisalignment with Business Requirement Documentation.</p>
+                        <h2 className="font-semibold text-black text-3xl mb-4">Impacts</h2>
+                    </div>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-x-8 gap-y-16">
+                        <KPIBlock
+                            className={"text-center"}
+                            type={KPITypes.normal}
+                            value="$180,000"
+                            title=""
+                            description="Potential extra costs saved in one quarter"
+                        /><KPIBlock
+                            className={"text-center"}
+                            type={KPITypes.percentage}
+                            value="<25"
+                            title=""
+                            description="Decreased drop cart rate"
+                        /><KPIBlock
+                            className={"text-center"}
+                            type={KPITypes.percentage}
+                            value="<39"
+                            title=""
+                            description="Drastically reduced amount of customer complaint calls."
+                        />
                     </div>
                 </div>
+            </div>
+            <div className="py-20 px-8 md:px-20 lg:px-32 xl:px-52 bg-faint-gray">
+                <h1 className="text-lg text-hero-highlight mb-2">Retrospect</h1>
                 <div>
-
-                </div>
-            </div>
-            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52 md:mb-10 mb-2">
-                <div className="grid sm:grid-cols-2 grid-cols-1 gap-16">
-                    <Image
-                        width={550}
-                        height={550}
-                        alt={"Core Experiences"}
-                        src={"/user_friendly/user_friendly_preview.png"}
-                    />
-                    <Image
-                        width={550}
-                        height={550}
-                        alt={"Core Experiences"}
-                        src={"/user_friendly/user_friendly_preview.png"}
-                    />
-                </div>
-                <div className="text-dark-gray grid sm:grid-cols-[33%_66%] grid-cols-1 mt-20">
-                    <div className="sm:mb-0 mb-4">
-                        <p className="text-sm mb-4">DESIGN</p>
-                        <p className="font-bold text-md mb-2">Providing the clear restriction information.</p>
-                    </div>
                     <div>
-                        <p>Misalignment with Business Requirement Documentation Misalignment with Business Requirement Documentation Misalignment with Business Requirement DocumentationMisalignment with Business Requirement Documentation.</p>
+                        <h2 className="font-semibold text-black text-3xl mb-8">What we&apos;d do differently</h2>
+                    </div>
+                    <div className="font-dark-text">
+                        <p className="text-md font-semibold">Risk Assessment and Contingency Planning</p>
+                        <p className="mb-5 text-sm text-hero-highlight">Conduct a risk assessment to identify potential challenges and uncertainties that may impact effort requirements. Develop contingency plans to address such risks and allocate additional resources or adjust timelines accordingly.</p>
+
+                    </div>
+                    <div className="font-dark-text">
+                        <p className="text-md font-semibold">Anticipate Change</p>
+                        <p className="mb-5 text-sm text-hero-highlight">Recognize that stakeholder turnover is a possibility and build flexibility into the project plan. Be prepared to adapt and adjust course if necessary, and communicate the potential impact of stakeholder changes to the team and other stakeholders.</p>
                     </div>
                 </div>
             </div>
-            <div className="py-16 px-8 md:px-20 lg:px-32 xl:px-52  bg-fill-grey">
-                <h1 className="font-bold text-2xl sm:mb-7 text-dark-text">
-                    Impacts
-                </h1>
-                <p className="text-2xl font-light">How might we comply with shipping laws while minimizing product disruptions for customers in specific zip codes?</p>
-                <div className="flex flex-col justify-center items-center gap-28 w-100 py-10">
-                    <KPIBlock
-                        type={KPITypes.multiple}
-                        value="25"
-                        title="Poor customer experience"
-                        description="Multiple orders were canceled and reprocessed, causing delays in"
-                    /><KPIBlock
-                        type={KPITypes.percentage}
-                        value="21"
-                        title="Poor customer experience"
-                        description="Multiple orders were canceled and reprocessed, causing delays in"
-                    /><KPIBlock
-                        type={KPITypes.normal}
-                        value="10"
-                        title="Poor customer experience"
-                        description="Multiple orders were canceled and reprocessed, causing delays in"
-                    />
-                </div>
+            <div className="py-20 px-8 md:px-20 lg:px-32 xl:px-52">
+                <OtherProjects
+                    currentProjectIndex={0}
+                ></OtherProjects>
             </div>
-            <OtherProjects
-                currentProjectIndex={0}
-            ></OtherProjects>
-
-
         </main >)
 }
