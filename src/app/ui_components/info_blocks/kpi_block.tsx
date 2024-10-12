@@ -8,7 +8,8 @@ export const KPIBlock: FunctionComponent<KPIBlockProps> = ({
     type,
     value,
     title,
-    description
+    description,
+    className
 }) => {
     function formatType(type: KPITypes, value: string): string {
         switch (type) {
@@ -22,8 +23,8 @@ export const KPIBlock: FunctionComponent<KPIBlockProps> = ({
     }
 
     return (
-        <div className="text-dark-gray">
-            <p className="text-9xl font-extrabold mb-2">{formatType(type, value)}</p>
+        <div className={className}>
+            <p className="text-7xl font-extrabold mb-2">{formatType(type, value)}</p>
             <p className=" font-bold mb-1 text-lg">{title}</p>
             <p className="font-light">{description}</p>
         </div>)

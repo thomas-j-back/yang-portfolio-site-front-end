@@ -18,7 +18,7 @@ export const OtherProjects: FunctionComponent<OtherProjectProps> = ({
 
     return (
         <div>
-            <section className="py-20 px-8 md:px-20 lg:px-32 xl:px-52">
+            <section>
                 <h1 className="font-semibold text-3xl mb-8 text-dark-text">
                     Other Projects
                 </h1>
